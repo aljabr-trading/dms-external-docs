@@ -1,0 +1,41 @@
+.flag-required {
+  display: inline-block;
+  color: #d72638;
+  font-size: 1em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.http-get {
+  background-color: #61affe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@keyframes blink-temp {
+  0%, 100% { background-color: #fff3bf; } /* yellow */
+  50% { background-color: transparent; }
+}
+
+.blink-anchor {
+    animation: blink-temp 2s ease-in-out forwards;
+}
+
+/* Permanent highlight after blink */
+.highlight-anchor {
+    background-color: #fff3bf; /* same yellow */
+}
+
+
+.json-box {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 6px;
+    overflow-x: auto;
+    max-height: 400px;
+    font-family: monospace;
+    white-space: pre;
+}
+
