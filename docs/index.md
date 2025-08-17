@@ -31,6 +31,13 @@ Additional endpoints and functionalities will be added over time, including:
 - Sales reporting
 
 ## How to Use This Documentation
+URL: 
+
+
+```
+PROD: https://dms-api.jtc.aljabr.com.sa/swagger/index.html
+TEST: https://dms-api-test.jtc.aljabr.com.sa/swagger/index.html
+``` 
 
 Each API endpoint in this documentation includes:
 - **Endpoint URL**  

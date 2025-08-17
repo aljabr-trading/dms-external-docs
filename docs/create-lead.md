@@ -5,9 +5,14 @@ hide:
 
 ## API endpoint
 
+
 ```
-https://dms-api-test.jtc.aljabr.com.sa/swagger/index.html
-```
+PROD: https://dms-api.jtc.aljabr.com.sa/api
+TEST: https://dms-api-test.jtc.aljabr.com.sa/api
+``` 
+<a><span class="http-get">POST</span></a> `/v1/leads/bulks`
+
+
 ---
 This symbol <span class="flag-required">*</span>  means the field is mandatory 
 
@@ -23,98 +28,76 @@ What do we type here?
 {
   "leads": [
     {
-      "leadType": { "value": 0, "label": "string" },
-      "companyIndustryType": { "value": 0, "label": "string" },
-      "contactName": "string",
-      "title": { "value": 0, "label": "string" },
-      "gender": { "value": 0, "label": "string" },
-      "nationality": { "value": 0, "label": "string" },
+      "company": "string",
+      "businessArea": "string",
+      "branch": "string",
+      "brand": "string",
+      "title": "string",
+      "nationality": "string",
+      "gender": "string",
+      "source": "string",
+      "subSource": "string",
+      "phoneCode": "string",
+      "phoneNumber": "string",
+      "preferredLanguage": "string",
+      "preferredContactType": "string",
+      "purchasePlan": "string",
+      "paymentMode": "string",
+      "monthlyIncome": "string",
+      "currency": "string",
+      "testDriveRequired": true,
+      "acceptNewsLetter": true,
+      "acceptMarketing": true,
+      "acceptPrivatePolicy": true,
+      "priority": "string",
+      "leadType": "string",
+      "interest": "string",
+      "vehicleType": "string",
       "firstName": "string",
       "middleName": "string",
       "lastName": "string",
-      "dateOfBirth": "2025-08-14T06:49:50.800Z",
+      "dateOfBirth": "2025-08-17T06:49:41.761Z",
       "occupation": "string",
-      "customerCountry": { "value": 0, "label": "string" },
-      "customerRegion": { "value": 0, "label": "string" },
-      "customerCity": { "value": 0, "label": "string" },
       "address1": "string",
       "address2": "string",
-      "phoneCode": { "value": 0, "label": "string" },
-      "phoneNumber": "5XXXXXXXX",
-      "email": "info@aljabr.com.sa",
-      "monthlyIncome": { "value": 0, "label": "string" },
-      "preferredLanguage": { "value": 0, "label": "string" },
-      "preferredContactType": { "value": 0, "label": "string" },
-      "company": { "value": 0, "label": "string" },
-      "ou": { "value": 0, "label": "string" },
-      "businessArea": { "value": 0, "label": "string" },
-      "branch": { "value": 0, "label": "string" },
-      "leadDate": "2025-08-14T06:49:50.801Z",
-      "leadInterest": { "value": 0, "label": "string" },
-      "source": { "value": 0, "label": "string" },
-      "subSource": { "value": 0, "label": "string" },
+      "email": "string",
       "leadName": "string",
+      "leadDate": "2025-08-17T06:49:41.761Z",
       "leadReference": "string",
       "leadNote": "string",
-      "vehicleType": { "value": 0, "label": "string" },
+      "contactName": "string",
+      "leadTypeName": "string",
+      "companyIndustryType": "string",
+      "customerCountry": "string",
+      "customerRegion": "string",
+      "customerCity": "string",
       "vehicles": [
         {
-          "modelFamily": { "value": 0, "label": "string" },
-          "modelYear": { "value": 0, "label": "string" },
+          "modelFamily": "string",
+          "modelYear": 0,
           "modelMemo": "string",
           "modelPreferences": "string",
           "totalQty": 1000
         }
-      ],
-      "purchasePlan": { "value": 0, "label": "string" },
-      "paymentMode": { "value": 0, "label": "string" },
-      "currency": { "value": 0, "label": "string" },
-      "priority": { "value": 0, "label": "string" },
-      "testDriveRequired": { "value": 0, "label": "string" },
-      "acceptNewsLetter": { "value": 0, "label": "string" },
-      "acceptMarketing": { "value": 0, "label": "string" },
-      "acceptPrivatePolicy": { "value": 0, "label": "string" }
+      ]
     }
-  ]
+  ],
+  "isProcessed": 1
 }
 ```
-
-#### Response  ----EDIT this
-
-```json
-{
-  "id": "survey_12345",
-  "status": "created"
-}
-```
-
----
-
-### 📌 Get Survey Results
-
-**GET** `/results/{survey_id}`
-
-Retrieves responses for a specific survey.
 
 #### Response
 
 ```json
-{
-  "survey_id": "survey_12345",
-  "responses": [
-    {
-      "user_id": "user_001",
-      "answers": [5]
-    }
-  ]
-}
+integer
 ```
 
 ---
 
+
 #### leadType <span class="flag-required">*</span>
 
-<a href="lookups/#customer_type"><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_TYPE}`
 
 !!! note "Mandatory Fields for Company Lead Type"
     When `leadType` value is Individual, the following fields are mandatory
@@ -130,7 +113,7 @@ Retrieves responses for a specific survey.
 
 #### companyIndustryType 
 
-<a href="lookups/#customer_industry_type"><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_INDUSTRY_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_INDUSTRY_TYPE}`
 
 contactName:`string`
 
@@ -138,15 +121,15 @@ leadTypeName:`string`
 
 #### title
 
-<a href="lookups/#title"><span class="http-get">GET</span></a> `/v1/list/{TITLE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{TITLE}`
 
 #### nationality
 
-<a href="lookups/#nationality"><span class="http-get">GET</span></a> `/v1/list/{NATIONALITY}`
+<a"><span class="http-get">GET</span></a> `/v1/list/{NATIONALITY}`
 
 #### gender
 
-<a href="lookups/#gender"><span class="http-get">GET</span></a> `/v1/list/{GENDER}`
+<a><span class="http-get">GET</span></a> `/v1/list/{GENDER}`
 
 firstName:`string`
 
@@ -160,15 +143,15 @@ occupation:`string`
 
 #### customerCountry <span class="flag-required">*</span>
 
-<a href="lookups/#country"><span class="http-get">GET</span></a> `/v1/list/{COUNTRY}`  
+<a><span class="http-get">GET</span></a> `/v1/list/{COUNTRY}`  
 
 #### customerRegion <span class="flag-required">*</span>
 
-<a href="lookups/#customer_region"><span class="http-get">GET</span></a> `/v1/list/{REGION}?parentId={customerCountry.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{REGION}?parentId={customerCountry.value}`
 
 #### customerCity <span class="flag-required">*</span>
 
-<a href="lookups/#customer_city"><span class="http-get">GET</span></a> `/v1/list/{CITY}?parentId={customerRegion.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{CITY}?parentId={customerRegion.value}`
 
 address1:`string`
 
@@ -176,53 +159,53 @@ address2:`string`
 
 #### phoneCode <span class="flag-required">*</span>
 
-<a href="lookups/#phone_code"><span class="http-get">GET</span></a> `/v1/list/{PHONE_CODE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{PHONE_CODE}`
 
 phoneNumber:`string`
 
-!!! note "phonerNumber length should be 9 characters"
+!!! note "phoneNumber length should be 9 characters"
 
 email:`string`
 
 #### monthlyIncome
 
-<a href="lookups/#lead_monthly_income"><span class="http-get">GET</span></a> `/v1/list/{LEAD_MONTHLY_INCOME}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_MONTHLY_INCOME}`
 
 preferredLanguage <span class="flag-required">*</span>
 
-<a href="lookups/#language"><span class="http-get">GET</span></a> `/v1/list/{LANGUAGE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LANGUAGE}`
 
 preferredContactType
 
-<a href="lookups/#contact_type"><span class="http-get">GET</span></a> `/v1/list/{CONTACT_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{CONTACT_TYPE}`
 
 company:`Aljabr Trading Company`
 
 ou <span class="flag-required">*</span>
 
-<a href="lookups/#ou_type"><span class="http-get">GET</span></a> `/v1/list/{OU_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{OU_TYPE}`
 
 businessArea <span class="flag-required">*</span>
 
-<a href="lookups/#business_area"><span class="http-get">GET</span></a> `/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}`
 
 branch <span class="flag-required">*</span>
 
-<a href="lookups/#branch_type"><span class="http-get">GET</span></a> `/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}`
 
 leadDate:`string` <span class="flag-required">*</span>
 
 leadInterest <span class="flag-required">*</span>
 
-<a href="lookups/#lead_interest"><span class="http-get">GET</span></a> `/v1/list/{LEAD_INTEREST}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_INTEREST}`
 
 source <span class="flag-required">*</span>
 
-<a href="lookups/#lead_source"><span class="http-get">GET</span></a> `/v1/list/{LEAD_SOURCE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SOURCE}`
 
 subSource <span class="flag-required">*</span>
 
-<a href="lookups/#lead_sub_source"><span class="http-get">GET</span></a> `/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}`
 
 leadName:`string` <span class="flag-required">*</span>
 
@@ -232,15 +215,15 @@ leadNote:`string`
 
 #### vehicleType
 
-<a href="lookups/#vehicle_type"><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
 
 vehicles.modelFamily
 
-<a href="lookups/#model"><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
+<a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
 
 vehicles.modelYear
 
-<a href="lookups/#model_year"><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
+<a><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
 
 <!-- should I keep as not in json -->
 vehicles.modelMemo:`string`
@@ -254,32 +237,32 @@ vehicles.totalQty:`string`
 
 purchasePlan
 
-<a href="lookups/#purchase_plan"><span class="http-get">GET</span></a> `/v1/list/{PURCHASE_PLAN}`
+<a><span class="http-get">GET</span></a> `/v1/list/{PURCHASE_PLAN}`
 
 paymentMode
 
-<a href="lookups/#payment_mode"><span class="http-get">GET</span></a> `/v1/list/{PAYMENT_MODE}`
+<a><span class="http-get">GET</span></a> `/v1/list/{PAYMENT_MODE}`
 
 currency
 
-<a href="lookups/#currency"><span class="http-get">GET</span></a> `/v1/list/{CURRENCY}`
+<a><span class="http-get">GET</span></a> `/v1/list/{CURRENCY}`
 
 priority <span class="flag-required">*</span>
 
-<a href="lookups/#lead_priority"><span class="http-get">GET</span></a> `/v1/list/{LEAD_PRIORITY}`
+<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_PRIORITY}`
 
 testDriveRequired
 
-<a href="lookups/#yes_or_no"><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
 acceptNewsLetter
 
-<a href="lookups/#yes_or_no"><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
 acceptMarketing
 
-<a href="lookups/#yes_or_no"><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
 acceptPrivatePolicy
 
-<a href="lookups/#yes_or_no"><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`

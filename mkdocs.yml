@@ -1,6 +1,9 @@
 site_name: My Docs
 theme:
   name: material
+  logo: assets/logo/JTCLogoWhite.png
+  favicon: assets/logo/JTCLogoBlack.png
+
   
 markdown_extensions:
   - admonition
@@ -24,5 +27,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Create Leads: create-lead.md
   - Lookups: lookups.md
+  - Create Leads: create-lead.md
+  - Get Leads: get-leads.md
