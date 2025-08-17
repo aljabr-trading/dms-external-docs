@@ -28,56 +28,55 @@ What do we type here?
 {
   "leads": [
     {
-      "company": "string",
-      "businessArea": "string",
-      "branch": "string",
-      "brand": "string",
-      "title": "string",
-      "nationality": "string",
-      "gender": "string",
-      "source": "string",
-      "subSource": "string",
-      "phoneCode": "string",
-      "phoneNumber": "string",
-      "preferredLanguage": "string",
-      "preferredContactType": "string",
-      "purchasePlan": "string",
-      "paymentMode": "string",
-      "monthlyIncome": "string",
-      "currency": "string",
+      "company": "JTC",
+      "businessArea": "Sales",
+      "brand": "JMC",
+      "title": "Mr",
+      "nationality": "Saudi",
+      "gender": "Mr",
+      "source": "Showroom",
+      "subSource": "Walk-in",
+      "phoneCode": "966",
+      "phoneNumber": "555555555",
+      "preferredLanguage": "English",
+      "preferredContactType": "Phone",
+      "purchasePlan": "Immediate",
+      "paymentMode": "Cash",
+      "monthlyIncome": "0-5000 SAR",
+      "currency": "SAR",
       "testDriveRequired": true,
       "acceptNewsLetter": true,
       "acceptMarketing": true,
       "acceptPrivatePolicy": true,
-      "priority": "string",
-      "leadType": "string",
-      "interest": "string",
-      "vehicleType": "string",
-      "firstName": "string",
-      "middleName": "string",
-      "lastName": "string",
+      "priority": "Hot",
+      "leadType": "Company",
+      "interest": "Vehicle Inquiry",
+      "vehicleType": "New",
+      "firstName": "Abdullah",
+      "middleName": "Mobarak",
+      "lastName": "Careem",
       "dateOfBirth": "2025-08-17T06:49:41.761Z",
       "occupation": "string",
-      "address1": "string",
-      "address2": "string",
-      "email": "string",
-      "leadName": "string",
+      "address1": "Building 7, King Fahad Road",
+      "address2": "Khobar",
+      "email": "example@example.com",
+      "leadName": "Example Holdings",
       "leadDate": "2025-08-17T06:49:41.761Z",
       "leadReference": "string",
       "leadNote": "string",
-      "contactName": "string",
-      "leadTypeName": "string",
-      "companyIndustryType": "string",
-      "customerCountry": "string",
-      "customerRegion": "string",
-      "customerCity": "string",
+      "contactName": "Abdullah",
+      "leadTypeName": "Company",
+      "companyIndustryType": "Bank",
+      "customerCountry": "Saudi Arabia",
+      "customerRegion": "Eastern Province",
+      "customerCity": "Dammam",
       "vehicles": [
         {
-          "modelFamily": "string",
-          "modelYear": 0,
+          "modelFamily": "Grand Avenue",
+          "modelYear": 2025,
           "modelMemo": "string",
           "modelPreferences": "string",
-          "totalQty": 1000
+          "totalQty": 1
         }
       ]
     }
@@ -115,9 +114,9 @@ integer
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_INDUSTRY_TYPE}`
 
-contactName:`string`
+#### contactName:`string`
 
-leadTypeName:`string`
+#### leadTypeName:`string`
 
 #### title
 
@@ -131,15 +130,15 @@ leadTypeName:`string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{GENDER}`
 
-firstName:`string`
+#### firstName:`string`
 
-lastName:`string`
+#### lastName:`string`
 
-middleName:`string`
+#### middleName:`string`
 
-dateOfBirth:`yyyy-mm-dd` 
+#### dateOfBirth:`yyyy-mm-dd` 
 
-occupation:`string`
+#### occupation:`string`
 
 #### customerCountry <span class="flag-required">*</span>
 
@@ -153,116 +152,116 @@ occupation:`string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CITY}?parentId={customerRegion.value}`
 
-address1:`string`
+#### address1:`string`
 
-address2:`string`
+#### address2:`string`
 
 #### phoneCode <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PHONE_CODE}`
 
-phoneNumber:`string`
+#### phoneNumber:`string`
 
 !!! note "phoneNumber length should be 9 characters"
 
-email:`string`
+#### email:`string`
 
 #### monthlyIncome
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_MONTHLY_INCOME}`
 
-preferredLanguage <span class="flag-required">*</span>
+#### preferredLanguage <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LANGUAGE}`
 
-preferredContactType
+#### preferredContactType
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CONTACT_TYPE}`
 
-company:`Aljabr Trading Company`
+#### company:`JTC`
 
-ou <span class="flag-required">*</span>
+#### ou <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{OU_TYPE}`
 
-businessArea <span class="flag-required">*</span>
+#### businessArea <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}`
 
-branch <span class="flag-required">*</span>
+#### branch <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}`
 
-leadDate:`string` <span class="flag-required">*</span>
+#### leadDate:`string` <span class="flag-required">*</span>
 
-leadInterest <span class="flag-required">*</span>
+#### leadInterest <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_INTEREST}`
 
-source <span class="flag-required">*</span>
+#### source <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SOURCE}`
 
-subSource <span class="flag-required">*</span>
+#### subSource <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}`
 
-leadName:`string` <span class="flag-required">*</span>
+#### leadName:`string` <span class="flag-required">*</span>
 
-leadReference:`string`
+#### leadReference:`string`
 
-leadNote:`string`
+#### leadNote:`string`
 
 #### vehicleType
 
 <a><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
 
-vehicles.modelFamily
+#### vehicles.modelFamily
 
 <a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
 
-vehicles.modelYear
+#### vehicles.modelYear
 
 <a><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
 
 <!-- should I keep as not in json -->
-vehicles.modelMemo:`string`
+#### vehicles.modelMemo:`string`
 
 <!-- should I keep as not in json -->
-vehicles.modelPreferences:`string`
+#### vehicles.modelPreferences:`string`
 
 <!-- should I keep as not in json -->
-vehicles.totalQty:`string`
+#### vehicles.totalQty:`string`
 
 
-purchasePlan
+#### purchasePlan
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PURCHASE_PLAN}`
 
-paymentMode
+#### paymentMode
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PAYMENT_MODE}`
 
-currency
+#### currency
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CURRENCY}`
 
-priority <span class="flag-required">*</span>
+#### priority <span class="flag-required">*</span>
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_PRIORITY}`
 
-testDriveRequired
+#### testDriveRequired
 
 <a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
-acceptNewsLetter
+#### acceptNewsLetter
 
 <a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
-acceptMarketing
+#### acceptMarketing
 
 <a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
 
-acceptPrivatePolicy
+#### acceptPrivatePolicy
 
 <a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
