@@ -423,19 +423,26 @@ This website is designed to help developers and integrators understand and inter
 <h2 id="purpose-of-this-api">Purpose of this API</h2>
 <p>The DMS API allows authorized systems to interact with our Dealer Management System programmatically.<br />
 It is intended for use by partners, dealerships, and internal teams who need to integrate their applications with DMS data and processes.</p>
-<p>With this API, you can:
-- Create, update, and retrieve leads.
-- Manage customer and vehicle data.
-- Access standardized lookup lists such as titles, nationalities, regions, and more.
-- Integrate with existing CRM or ERP platforms to streamline automotive sales and service operations.</p>
+<p>With this API, you can:</p>
+<ul>
+<li>
+<p>Create and retrieve leads.</p>
+</li>
+<li>
+<p>Access Master List such as titles, nationalities, regions, and more.</p>
+</li>
+<li>
+<p>Integrate with existing ERP platforms to streamline automotive sales operations.</p>
+</li>
+</ul>
 <h2 id="current-scope">Current Scope</h2>
 <p>At present, this documentation covers the <strong>"Create Lead"</strong> process, which enables clients to submit new leads into the DMS, along with all associated customer and vehicle details.</p>
-<p>Additional endpoints and functionalities will be added over time, including:
-- Lead retrieval and updates
-- Inventory queries
+<!-- - Inventory queries
 - Appointment scheduling
 - Test drive management
-- Sales reporting</p>
+- Sales reporting
+-->
+
 <h2 id="how-to-use-this-documentation">How to Use This Documentation</h2>
 <p>URL: </p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PROD: https://dms-api.jtc.aljabr.com.sa/swagger/index.html
@@ -443,11 +450,11 @@ It is intended for use by partners, dealerships, and internal teams who need to 
 </span></code></pre></div>
 <p>Each API endpoint in this documentation includes:
 - <strong>Endpoint URL</strong><br />
-- <strong>HTTP method</strong> (GET, POST, PUT, DELETE)<br />
+- <strong>HTTP method</strong> (GET, POST)<br />
 - <strong>Request body format</strong> (with example JSON)<br />
 - <strong>Response examples</strong><br />
 - <strong>Field descriptions</strong>  </p>
-<p>Where applicable, we have also provided lookup reference endpoints to retrieve valid values for certain fields, ensuring data consistency.</p>
+<p>As applicable, the Master list should be refered with specified endpoints to retrieve possible values for list certain fields, ensuring valid data. Incase if any incorrect or junk data for list field will be resulted in errors.</p>
 <hr />
 
 

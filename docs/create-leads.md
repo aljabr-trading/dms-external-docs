@@ -14,13 +14,11 @@ TEST: https://dms-api-test.jtc.aljabr.com.sa/api
 
 
 ---
-This symbol <span class="flag-required">*</span>  means the field is mandatory 
+Refere the comment  <span class="flag-required"> //Mandatory</span>  means the property is required 
 
 ### 📌 API
-
-### Field Name <span class="flag-required">*</span>
-
-What do we type here?
+ 
+sample data with reference of master list mapping
 
 #### Request Mapping
 
@@ -28,35 +26,35 @@ What do we type here?
 {
   "leads": [
     {
-      "company": "JTC", (list Id : 0  eg : JTC)
-      "businessArea": "Sales", (list Id : 3 eg : Sales)
-      "brand": "JMC", (list Id : 2 eg : Kia)
-      "title": "Mr", (list Id : 50 eg : Mr)
-      "nationality": "Saudi Arabian", (list Id : 51 eg : Saudi Arabian)
-      "gender": "Male", (list Id : 52 eg: Male)
-      "source": "Showroom", (list Id : 70 eg : Showroom)
-      "subSource": "Walk-in", (list Id : 71 eg : Walk-in)
-      "phoneCode": "00966", (list Id : 62 eg: 00966)
+      "company": "JTC", (List Id : 0  eg : JTC)
+      "businessArea": "Sales", (List Id : 3 eg : Sales)
+      "brand": "JMC", (List Id : 2 eg : Kia)
+      "title": "Mr", (List Id : 50 eg : Mr)
+      "nationality": "Saudi Arabian", (List Id : 51 eg : Saudi Arabian)
+      "gender": "Male", (List Id : 52 eg: Male)
+      "source": "Showroom", (List Id : 70 eg : Showroom)
+      "subSource": "Walk-in", (List Id : 71 eg : Walk-in)
+      "phoneCode": "00966", (List Id : 62 eg: 00966)
       "phoneNumber": "555555555", (user input eg : 5xxxxxxxx)
-      "preferredLanguage": "English", (list Id : 54 eg : English)
-      "preferredContactType": "Phone", (list Id : 55 eg : Phone)
-      "purchasePlan": "Immediate", (list Id :59 eg : Immediate)
-      "paymentMode": "Cash", (list Id : 60 eg : Cash)
-      "monthlyIncome": "0-5000 SAR", (list Id : 78 eg : 0-5000 SAR)
-      "currency": "SAR", (list Id : 61 eg : SAR)
+      "preferredLanguage": "English", (List Id : 54 eg : English)
+      "preferredContactType": "Phone", (List Id : 55 eg : Phone)
+      "purchasePlan": "Immediate", (List Id :59 eg : Immediate)
+      "paymentMode": "Cash", (List Id : 60 eg : Cash)
+      "monthlyIncome": "0-5000 SAR", (List Id : 78 eg : 0-5000 SAR)
+      "currency": "SAR", (List Id : 61 eg : SAR)
       "testDriveRequired": true, (boolean eg : true)
       "acceptNewsLetter": true, (boolean eg : true)
       "acceptMarketing": true, (boolean eg : true)
       "acceptPrivatePolicy": true, (boolean eg : true)
-      "priority": "Hot", (list Id : 22 eg : Hot)
-      "leadType": "Company", (list Id : 55 eg : Company)
-      "interest": "Vehicle Inquiry", (list Id : 74 eg : Vehicle Inquiry)
-      "vehicleType": "New", (list Id : 79 eg : New)
+      "priority": "Hot", (List Id : 22 eg : Hot)
+      "leadType": "Company", (List Id : 55 eg : Company)
+      "interest": "Vehicle Inquiry", (List Id : 74 eg : Vehicle Inquiry)
+      "vehicleType": "New", (List Id : 79 eg : New)
       "firstName": "Abdullah", (user input eg : Abdullah)
       "middleName": "Mobarak", (user input eg : Mobarak)
       "lastName": "Careem", (user input eg : Careem)
       "dateOfBirth": "2025-08-17T06:49:41.761Z", (yyyy-mm-dd eg : 2025-08-17)
-      "occupation": "Civil Engineer", (list Id 53 eg : Civil Engineer)
+      "occupation": "Civil Engineer", (List Id 53 eg : Civil Engineer)
       "address1": "Building 7, King Fahad Road", (user input eg : Building 7, King Fahad Road)
       "address2": "Khobar", (user input eg : Khobar)
       "email": "string", (user input eg : email)
@@ -65,15 +63,15 @@ What do we type here?
       "leadReference": "string", (user input eg : any text)
       "leadNote": "string", (user input eg : any text)
       "contactName": "Abdullah", (user input eg : Abdullah)
-      "leadTypeName": "Company", (list Id : 27 eg : Company)
-      "companyIndustryType": "Bank", (list Id : 39 eg : Bank)
-      "customerCountry": "Saudi Arabia", (list Id : 56 eg : Saudi Arabia)
-      "customerRegion": "Eastern Province", (list Id : 100 eg : Eastern Province)
-      "customerCity": "Dammam", (list Id : 101 eg : Dammam)
+      "leadTypeName": "Company", (List Id : 27 eg : Company)
+      "companyIndustryType": "Bank", (List Id : 39 eg : Bank)
+      "customerCountry": "Saudi Arabia", (List Id : 56 eg : Saudi Arabia)
+      "customerRegion": "Eastern Province", (List Id : 100 eg : Eastern Province)
+      "customerCity": "Dammam", (List Id : 101 eg : Dammam)
       "vehicles": [
         {
-          "modelFamily": "Grand Avenue", (list Id : 63 eg : Grand Avenue)
-          "modelYear": 2025, (list Id : 64 eg : 2025)
+          "modelFamily": "Grand Avenue", (List Id : 63 eg : Grand Avenue)
+          "modelYear": 2025, (List Id : 64 eg : 2025)
           "modelMemo": "string", (user input eg : any text)
           "modelPreferences": "string", (user input eg : any text)
           "totalQty": 1 (minimum 1 & maximum 1000)
@@ -88,7 +86,9 @@ What do we type here?
 
 
 
-#### Request Body <span class="flag-required">*</span>
+#### Request Body <span class="flag-required"></span> 
+
+Below are the possible values for creating lead and properties will be mandatory or optionals based on business conditions and type of the leads
 
 ```json
 {
@@ -152,7 +152,7 @@ What do we type here?
 ```
 
 
-#### Company Request Body Example
+#### Lead Type : Company  (Sample Json)
 ```json
 {
    "leads":[
@@ -202,7 +202,7 @@ What do we type here?
 }
 
 ```
-#### Individual Request Body Example
+#### Lead Type : Individual  (Sample Json)
 
 ```json
 {
