@@ -9,22 +9,18 @@
       
       
       
-        <link rel="prev" href="../lookups/">
-      
-      
-        <link rel="next" href="../get-leads/">
       
       
       <link rel="icon" href="../assets/logo/JTCLogoBlack.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Create Leads - JTC DMS Integration Docs</title>
+        <title>Create lead - JTC DMS Integration Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -99,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create Leads
+              Create lead
             
           </span>
         </div>
@@ -223,7 +219,7 @@
   
   
   <span class="md-ellipsis">
-    Lookups
+    Master List
     
   </span>
   
@@ -237,30 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Create Leads
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../create-leads/" class="md-nav__link">
         
   
   
@@ -271,513 +247,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#api-endpoint" class="md-nav__link">
-    <span class="md-ellipsis">
-      API endpoint
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API endpoint">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#field-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Field Name *
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Field Name *">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#request-body" class="md-nav__link">
-    <span class="md-ellipsis">
-      Request Body *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
-    <span class="md-ellipsis">
-      Response
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadtype" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadType *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#companyindustrytype" class="md-nav__link">
-    <span class="md-ellipsis">
-      companyIndustryType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contactnamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      contactName:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadtypenamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadTypeName:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#title" class="md-nav__link">
-    <span class="md-ellipsis">
-      title
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nationality" class="md-nav__link">
-    <span class="md-ellipsis">
-      nationality
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gender" class="md-nav__link">
-    <span class="md-ellipsis">
-      gender
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firstnamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      firstName:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lastnamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      lastName:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#middlenamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      middleName:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dateofbirthyyyy-mm-dd" class="md-nav__link">
-    <span class="md-ellipsis">
-      dateOfBirth:yyyy-mm-dd
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#occupationstring" class="md-nav__link">
-    <span class="md-ellipsis">
-      occupation:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customercountry" class="md-nav__link">
-    <span class="md-ellipsis">
-      customerCountry *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customerregion" class="md-nav__link">
-    <span class="md-ellipsis">
-      customerRegion *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customercity" class="md-nav__link">
-    <span class="md-ellipsis">
-      customerCity *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#address1string" class="md-nav__link">
-    <span class="md-ellipsis">
-      address1:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#address2string" class="md-nav__link">
-    <span class="md-ellipsis">
-      address2:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phonecode" class="md-nav__link">
-    <span class="md-ellipsis">
-      phoneCode *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phonenumberstring" class="md-nav__link">
-    <span class="md-ellipsis">
-      phoneNumber:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#emailstring" class="md-nav__link">
-    <span class="md-ellipsis">
-      email:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monthlyincome" class="md-nav__link">
-    <span class="md-ellipsis">
-      monthlyIncome
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preferredlanguage" class="md-nav__link">
-    <span class="md-ellipsis">
-      preferredLanguage *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preferredcontacttype" class="md-nav__link">
-    <span class="md-ellipsis">
-      preferredContactType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#companyjtc" class="md-nav__link">
-    <span class="md-ellipsis">
-      company:JTC
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ou" class="md-nav__link">
-    <span class="md-ellipsis">
-      ou *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#businessarea" class="md-nav__link">
-    <span class="md-ellipsis">
-      businessArea *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#branch" class="md-nav__link">
-    <span class="md-ellipsis">
-      branch *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leaddatestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadDate:string *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadinterest" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadInterest *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      source *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#subsource" class="md-nav__link">
-    <span class="md-ellipsis">
-      subSource *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadnamestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadName:string *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadreferencestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadReference:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#leadnotestring" class="md-nav__link">
-    <span class="md-ellipsis">
-      leadNote:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehicletype" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicleType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehiclesmodelfamily" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicles.modelFamily
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehiclesmodelyear" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicles.modelYear
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehiclesmodelmemostring" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicles.modelMemo:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehiclesmodelpreferencesstring" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicles.modelPreferences:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vehiclestotalqtystring" class="md-nav__link">
-    <span class="md-ellipsis">
-      vehicles.totalQty:string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#purchaseplan" class="md-nav__link">
-    <span class="md-ellipsis">
-      purchasePlan
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#paymentmode" class="md-nav__link">
-    <span class="md-ellipsis">
-      paymentMode
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#currency" class="md-nav__link">
-    <span class="md-ellipsis">
-      currency
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#priority" class="md-nav__link">
-    <span class="md-ellipsis">
-      priority *
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testdriverequired" class="md-nav__link">
-    <span class="md-ellipsis">
-      testDriveRequired
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acceptnewsletter" class="md-nav__link">
-    <span class="md-ellipsis">
-      acceptNewsLetter
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acceptmarketing" class="md-nav__link">
-    <span class="md-ellipsis">
-      acceptMarketing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acceptprivatepolicy" class="md-nav__link">
-    <span class="md-ellipsis">
-      acceptPrivatePolicy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1337,7 +806,7 @@
 
 
 
-  <h1>Create Leads</h1>
+  <h1>Create lead</h1>
 
 <h2 id="api-endpoint">API endpoint</h2>
 <p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PROD: https://dms-api.jtc.aljabr.com.sa/api
@@ -1565,7 +1034,7 @@
       <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
