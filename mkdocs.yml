@@ -27,6 +27,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Lookups: lookups.md
-  - Create Leads: create-lead.md
+  - Master List: lookups.md
+  - Create Leads: create-leads.md
   - Get Leads: get-leads.md
