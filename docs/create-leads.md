@@ -90,6 +90,9 @@ sample data with reference of master list mapping
 
 Below are the possible values for creating lead and properties will be mandatory or optionals based on business conditions and type of the leads
 
+!!!Note 
+    Minimum 1 Lead and Maximum 20 leads per request will be allowed and for each lead minimum one vehicle details and maximum 5 vehicle details will be allowed.
+
 ```json
 {
   "leads": [
@@ -155,7 +158,7 @@ Below are the possible values for creating lead and properties will be mandatory
 #### Lead Type : Company  (Sample Json)
 ```json
 {
-   "leads":[
+   "leads":[                                          //Minimum 1 & Maximum 20
       {
         "leadtype":"Company",                         //Mandatory
         "companyIndustryType":"Bank",                 //Mandatory
@@ -187,7 +190,7 @@ Below are the possible values for creating lead and properties will be mandatory
         "company":"JTC",                               //Mandatory
         "priority":"Warm",                             //Mandatory
         "leaddate":"yyyy-dd-mm",
-        "vehicles":[                                   //Mandatory
+        "vehicles":[         //Minimum 1 & Maximum 5   //Mandatory
           {
             "modelFamily":"RIO",                       //Mandatory
             "modelYear":"2024",
@@ -206,7 +209,7 @@ Below are the possible values for creating lead and properties will be mandatory
 
 ```json
 {
-   "leads":[
+   "leads":[                                            //Minimum 1 & Maximum 20
       {
         "leadtype":"Individual",                        //Mandatory
         "title":"Mr",
@@ -247,7 +250,7 @@ Below are the possible values for creating lead and properties will be mandatory
         "company":"JTC",                                //Mandatory
         "priority":"Warm",                              //Mandatory
         "leaddate":"yyyy-mm-dd",
-        "vehicles":[                                    //Mandatory
+        "vehicles":[         //Minimum 1 & Maximum 5    //Mandatory
             {
                "modelFamily":"RIO",                     //Mandatory
                "modelYear":"2024",
@@ -270,7 +273,7 @@ Below are the possible values for creating lead and properties will be mandatory
 ```json
 integer
 ```
-
+!!!warning "Maximum 20 leads are allowed"
 ---
 
 
@@ -396,7 +399,7 @@ integer
 
 <a><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
 
-#### vehicles.modelFamily
+#### vehicles.modelFamily    
 
 <a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
 

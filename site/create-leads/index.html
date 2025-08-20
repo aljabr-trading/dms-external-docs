@@ -1446,6 +1446,10 @@
 </span></code></pre></div>
 <h4 id="request-body">Request Body <span class="flag-required"></span></h4>
 <p>Below are the possible values for creating lead and properties will be mandatory or optionals based on business conditions and type of the leads</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Minimum 1 Lead and Maximum 20 leads per request will be allowed and for each lead minimum one vehicle details and maximum 5 vehicle details will be allowed.</p>
+</div>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;leads&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">{</span>
@@ -1507,7 +1511,7 @@
 </span></code></pre></div>
 <h4 id="lead-type-company-sample-json">Lead Type : Company  (Sample Json)</h4>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">   </span><span class="nt">&quot;leads&quot;</span><span class="p">:[</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">   </span><span class="nt">&quot;leads&quot;</span><span class="p">:[</span><span class="w">                                          </span><span class="c1">//Minimum 1 &amp; Maximum 20</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="p">{</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="nt">&quot;leadtype&quot;</span><span class="p">:</span><span class="s2">&quot;Company&quot;</span><span class="p">,</span><span class="w">                         </span><span class="c1">//Mandatory</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="nt">&quot;companyIndustryType&quot;</span><span class="p">:</span><span class="s2">&quot;Bank&quot;</span><span class="p">,</span><span class="w">                 </span><span class="c1">//Mandatory</span>
@@ -1539,7 +1543,7 @@
 </span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">        </span><span class="nt">&quot;company&quot;</span><span class="p">:</span><span class="s2">&quot;JTC&quot;</span><span class="p">,</span><span class="w">                               </span><span class="c1">//Mandatory</span>
 </span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="s2">&quot;Warm&quot;</span><span class="p">,</span><span class="w">                             </span><span class="c1">//Mandatory</span>
 </span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">        </span><span class="nt">&quot;leaddate&quot;</span><span class="p">:</span><span class="s2">&quot;yyyy-dd-mm&quot;</span><span class="p">,</span>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">        </span><span class="nt">&quot;vehicles&quot;</span><span class="p">:[</span><span class="w">                                   </span><span class="c1">//Mandatory</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">        </span><span class="nt">&quot;vehicles&quot;</span><span class="p">:[</span><span class="w">         </span><span class="c1">//Minimum 1 &amp; Maximum 5   //Mandatory</span>
 </span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">          </span><span class="p">{</span>
 </span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">            </span><span class="nt">&quot;modelFamily&quot;</span><span class="p">:</span><span class="s2">&quot;RIO&quot;</span><span class="p">,</span><span class="w">                       </span><span class="c1">//Mandatory</span>
 </span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">            </span><span class="nt">&quot;modelYear&quot;</span><span class="p">:</span><span class="s2">&quot;2024&quot;</span><span class="p">,</span>
@@ -1555,7 +1559,7 @@
 </span></code></pre></div>
 <h4 id="lead-type-individual-sample-json">Lead Type : Individual  (Sample Json)</h4>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">   </span><span class="nt">&quot;leads&quot;</span><span class="p">:[</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">   </span><span class="nt">&quot;leads&quot;</span><span class="p">:[</span><span class="w">                                            </span><span class="c1">//Minimum 1 &amp; Maximum 20</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span><span class="p">{</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nt">&quot;leadtype&quot;</span><span class="p">:</span><span class="s2">&quot;Individual&quot;</span><span class="p">,</span><span class="w">                        </span><span class="c1">//Mandatory</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Mr&quot;</span><span class="p">,</span>
@@ -1596,7 +1600,7 @@
 </span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">        </span><span class="nt">&quot;company&quot;</span><span class="p">:</span><span class="s2">&quot;JTC&quot;</span><span class="p">,</span><span class="w">                                </span><span class="c1">//Mandatory</span>
 </span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="s2">&quot;Warm&quot;</span><span class="p">,</span><span class="w">                              </span><span class="c1">//Mandatory</span>
 </span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">        </span><span class="nt">&quot;leaddate&quot;</span><span class="p">:</span><span class="s2">&quot;yyyy-mm-dd&quot;</span><span class="p">,</span>
-</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">        </span><span class="nt">&quot;vehicles&quot;</span><span class="p">:[</span><span class="w">                                    </span><span class="c1">//Mandatory</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">        </span><span class="nt">&quot;vehicles&quot;</span><span class="p">:[</span><span class="w">         </span><span class="c1">//Minimum 1 &amp; Maximum 5    //Mandatory</span>
 </span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">            </span><span class="p">{</span>
 </span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">               </span><span class="nt">&quot;modelFamily&quot;</span><span class="p">:</span><span class="s2">&quot;RIO&quot;</span><span class="p">,</span><span class="w">                     </span><span class="c1">//Mandatory</span>
 </span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">               </span><span class="nt">&quot;modelYear&quot;</span><span class="p">:</span><span class="s2">&quot;2024&quot;</span><span class="p">,</span>
@@ -1613,6 +1617,9 @@
 <h4 id="response">Response</h4>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="err">i</span><span class="kc">nte</span><span class="err">ger</span>
 </span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Maximum 20 leads are allowed</p>
+</div>
 <hr />
 <h4 id="leadtype">leadType <span class="flag-required">*</span></h4>
 <p><a><span class="http-get">GET</span></a> <code>/v1/list/{CUSTOMER_TYPE}</code></p>
