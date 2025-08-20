@@ -36,8 +36,8 @@ At present, this documentation covers the **"Create Lead"** process, which enabl
 URL: 
 
 ```
-PROD: https://dms-api.jtc.aljabr.com.sa/swagger/index.html
-TEST: https://dms-api-test.jtc.aljabr.com.sa/swagger/index.html
+PROD: https://dms-gs.jtc.aljabr.com.sa
+TEST: https://dms-gs-test.jtc.aljabr.com.sa
 ``` 
 
 Each API endpoint in this documentation includes:
