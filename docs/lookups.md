@@ -4,8 +4,8 @@ hide:
 ---
 
 ```
-PROD: https://dms-api.jtc.aljabr.com.sa/api
-TEST: https://dms-api-test.jtc.aljabr.com.sa/api
+PROD: https://dms-gs.jtc.aljabr.com.sa/gs
+TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
 ## Master List (for reference)

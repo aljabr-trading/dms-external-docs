@@ -3,9 +3,6 @@ theme:
   name: material
   logo: assets/logo/JTCLogoWhite.png
   favicon: assets/logo/JTCLogoBlack.png
-  admonition:
-    icon: 
-      warning: octicons/alert-16
 
   
 markdown_extensions:
