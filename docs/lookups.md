@@ -17,7 +17,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 
 
 
-### Response Body
+### Response
 
 ```json
 [
@@ -53,7 +53,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
   },
   {
     "listName": "Priority",
-    "List Id": 22,
+    "List Id": 75,
     "parentList Id": 0,
     "parentListName": ""
   },

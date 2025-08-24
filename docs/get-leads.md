@@ -10,7 +10,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 <a><span class="http-get">GET</span></a> `/v1/leads/bulks/{id}`
 
-#### Request Body
+#### Response
 ```json
 {
   "createdDate": "2025-08-15T11:42:22.727",
@@ -80,9 +80,6 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
       "leadName": "sadsad",
       "leadDate": "2025-08-12T00:00:00",
       "leadReference": "dsfsfds",
-      "leadNote": null,
-      "contactName": null,
-      "leadTypeName": "Individual",
       "companyIndustryType": "Bank",
       "customerCountry": "Saudi Arabia",
       "customerRegion": "Riyadh",
