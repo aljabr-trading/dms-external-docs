@@ -199,21 +199,27 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ### Query Parameters
 
 ```
-List Id: integer
-parentList Id: integer(optional)
+listId: integer
+parentListId: integer(optional)
 parentId: integer (optional)  
 ``` 
 List Id will get the drop down list based on lookuptype
 !!!Note
     Refer the List Id from master lookup list
-    parentList Id and parentId: applicables for Region and City
+    parentList Id and parentId: applicable for Region and City
     
-        example for Region: 
-        List Id: Region LookupId from master list (List Id 100)
-        parentList Id: Country master Id (List Id 56) 
-        parentId: Country Id which is selected (List Id 56, Saudi Arabia)
-        
-        example for City: 
-        List Id: City LookupId from master list (List Id 101)
-        parentList Id: Region master Id (List Id 100)
-        parentId: Region Id which is selected (List Id 100, Riyadh)
+    #### Example for Region: 
+
+    `listId`: Region LookupId from master list (List Id 100)
+
+    `parentListId`: Country master Id (List Id 56) 
+
+    `parentId`: Country Id which is selected (List Id 56, Saudi Arabia)
+    
+    #### Example for City: 
+
+    `listId`: City LookupId from master list (List Id 101)
+
+    `parentListId`: Region master Id (List Id 100)
+
+    `parentId`: Region Id which is selected (List Id 100, Riyadh)
