@@ -10,24 +10,56 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 <a><span class="http-get">GET</span></a> `/v1/leads/bulks/{id}`
 
-#### Response
+#### Response  <!-- confirmed by mr kripa about keeping the time -->
 ```json
 {
-  "createdDate": "2025-08-15T11:42:22.727",
-  "createdBy": 1,
-  "totalRecords": 1,
-  "errorRecords": 1,
   "leads": [
     {
-      "leadExternalId": 5,
+      "leadExternalId": 574,
       "leadId": 0,
-      "createdDate": "2025-08-15T11:42:23.51",
-      "isError": 1,
-      "vehicles": null,
-      "vehicleLists": [
+      "createdDate": "2025-08-24T11:17:36.787",
+      "isError": 0,
+      "errorList": null,
+
+      "leadType": "Individual",
+      "title": "Mr",
+      "gender": "Male",
+      "nationality": "saudi",
+      "firstName": "first name",
+      "middleName": "middle name",
+      "lastName": "last name",
+      "contactName": "string",
+      "companyName": "string",
+      "companyIndustryType": "string",
+      "dateOfBirth": "2022-08-12T00:00:00",
+      "occupation": "occupation",
+      "customerCountry": "Saudi Arabia",
+      "customerRegion": "Riyadh",
+      "customerCity": "Afif",
+      "address1": "address1",
+      "address2": "address2",
+      "phoneCode": "00966",
+      "phoneNumber": "500000005",
+      "email": "john@example.com",
+      "monthlyIncome": "5000-10000 SAR",
+      "preferredLanguage": "Arabic",
+      "preferredContactType": "Email",
+      "company": "JTC",
+      "brand": "KIA",
+      "businessArea": "Sales",
+      "branch": null,
+      "leadDate": "2025-08-12T00:00:00",
+      "interest": "Price Quote",
+      "source": "Direct Contact",
+      "subSource": "Email",
+      "leadName": "leadname",
+      "leadReference": "lead reference",
+      "leadNote": "leadnote",
+      "vehicleType": "New",
+      "vehicles": [
         {
-          "leadVehiclesId": 5,
-          "createdDate": "2025-08-15T14:42:29.283",
+          "leadVehiclesId": 575,
+          "createdDate": "2025-08-24T14:17:36.817",
           "modelFamily": "RIO",
           "modelYear": 2024,
           "modelMemo": "Model Memo",
@@ -35,57 +67,20 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
           "totalQty": 1
         }
       ],
-      "errorList": [
-        {
-          "errorId": 33,
-          "createdDate": "2025-08-15T17:31:07.35",
-          "errorMessage": "Lead Sub Source is Invalid",
-          "errorMessageAr": "Lead Sub Source is Invalid",
-          "errorCodeId": 1
-        }
-      ],
-      "company": "JTC",
-      "businessArea": "Sales",
-      "branch": null,
-      "brand": "KIA",
-      "title": "Mr",
-      "nationality": "Saudi",
-      "gender": "Male",
-      "source": "Direct Contact",
-      "subSource": "WhatsApp",
-      "phoneCode": "00966",
-      "phoneNumber": "500000005",
-      "preferredLanguage": "Arabic",
-      "preferredContactType": "Email",
       "purchasePlan": "Within 30 Days",
       "paymentMode": "Credit",
-      "monthlyIncome": "5000-10000 SAR",
       "currency": "SAR",
-      "testDriveRequired": null,
+      "priority": "Warm",
+      "testDriveRequired": true,
       "acceptNewsLetter": true,
       "acceptMarketing": true,
-      "acceptPrivatePolicy": true,
-      "priority": "Low",
-      "leadType": null,
-      "interest": "Price Quote",
-      "vehicleType": "New",
-      "firstName": "fdsf sdfdsf",
-      "middleName": null,
-      "lastName": "dfdsf sdfdsf",
-      "dateOfBirth": null,
-      "occupation": null,
-      "address1": null,
-      "address2": null,
-      "email": "john@example.com",
-      "leadName": "sadsad",
-      "leadDate": "2025-08-12T00:00:00",
-      "leadReference": "dsfsfds",
-      "companyIndustryType": "Bank",
-      "customerCountry": "Saudi Arabia",
-      "customerRegion": "Riyadh",
-      "customerCity": "Afif"
+      "acceptPrivatePolicy": true
     }
   ],
+  "createdDate": "2025-08-24T11:17:36.767",
+  "createdBy": 1,
+  "totalRecords": 1,
+  "errorRecords": 0,
   "isProcessed": 2
 }
 ``` 
