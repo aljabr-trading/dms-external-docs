@@ -8,7 +8,21 @@ Base URL
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
-<a><span class="http-get">GET</span></a> `/v1/leads/bulks/{id}`
+<a><span class="http-get">GET</span></a> `/v1/leads/bulks`
+
+### Query Parameters
+
+```
+id: long
+fromDate: string (Eg: 2025-08-24T21:00:00.000Z)
+toDate: string (Eg: 2025-08-24T21:00:00.000Z)
+source: integer (optional)
+subSource: integer (optional)
+``` 
+
+!!!Note 
+    In this request, either `id` or `fromDate` and `toDate` is mandatory.
+    Also, date range should be 7 days
 
 #### Response  <!-- confirmed by mr kripa about keeping the time -->
 ```json
@@ -17,10 +31,8 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
     {
       "leadExternalId": 574,
       "leadId": 0,
-      "createdDate": "2025-08-24T11:17:36.787",
       "isError": 0,
       "errorList": null,
-
       "leadType": "Individual",
       "title": "Mr",
       "gender": "Male",
@@ -31,7 +43,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
       "contactName": "string",
       "companyName": "string",
       "companyIndustryType": "string",
-      "dateOfBirth": "2022-08-12T00:00:00",
+      "dateOfBirth": "2022-08-12",
       "occupation": "occupation",
       "customerCountry": "Saudi Arabia",
       "customerRegion": "Riyadh",
@@ -48,7 +60,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
       "brand": "KIA",
       "businessArea": "Sales",
       "branch": null,
-      "leadDate": "2025-08-12T00:00:00",
+      "leadDate": "2025-08-12",
       "interest": "Price Quote",
       "source": "Direct Contact",
       "subSource": "Email",
@@ -59,7 +71,6 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
       "vehicles": [
         {
           "leadVehiclesId": 575,
-          "createdDate": "2025-08-24T14:17:36.817",
           "modelFamily": "RIO",
           "modelYear": 2024,
           "modelMemo": "Model Memo",
@@ -77,7 +88,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
       "acceptPrivatePolicy": true
     }
   ],
-  "createdDate": "2025-08-24T11:17:36.767",
+  "createdDate": "2025-08-24T21:00:00.000Z",
   "createdBy": 1,
   "totalRecords": 1,
   "errorRecords": 0,
@@ -85,17 +96,18 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 }
 ``` 
 
-!!!Note
-    "errorRecords" states the error count
+!!!Notes
+    `errorRecords` states the error count
         
-    "isProcessed" states the enum of
+    `isProcessed` states the enum of
 
         1 - means created
         2 - means inprogress
         3 - means cancelled
         4 - means completed
 
-    "leads" states list of leads which are sent against this Id
+    `leads` states list of leads which are sent against this Id
 
-        "leadId" created in DMS
-        "errorList" explains the error that is occuring against the leadId
+        `leadId` created in DMS
+
+        `errorList` explains the errors that is occurring against the `leadId`
