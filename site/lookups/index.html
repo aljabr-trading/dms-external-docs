@@ -304,6 +304,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Query Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-for-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example for Region:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-for-city" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example for City:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -429,6 +453,30 @@
       Query Parameters
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Query Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-for-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example for Region:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-for-city" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example for City:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -641,25 +689,23 @@
 <h2 id="master-list-based-on-lookup-types">Master list based on lookup types</h2>
 <p><span class="http-get">GET</span> <code>/v1/leads/list</code></p>
 <h3 id="query-parameters">Query Parameters</h3>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>List Id: integer
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>parentList Id: integer(optional)
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>listId: integer
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>parentListId: integer(optional)
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>parentId: integer (optional)  
 </span></code></pre></div>
 List Id will get the drop down list based on lookuptype</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Refer the List Id from master lookup list
-parentList Id and parentId: applicables for Region and City</p>
-<div class="language-text highlight"><pre><span></span><code>example for Region: 
-List Id: Region LookupId from master list (List Id 100)
-parentList Id: Country master Id (List Id 56) 
-parentId: Country Id which is selected (List Id 56, Saudi Arabia)
-
-example for City: 
-List Id: City LookupId from master list (List Id 101)
-parentList Id: Region master Id (List Id 100)
-parentId: Region Id which is selected (List Id 100, Riyadh)
-</code></pre></div>
+parentList Id and parentId: applicable for Region and City</p>
+<h4 id="example-for-region">Example for Region:</h4>
+<p><code>listId</code>: Region LookupId from master list (List Id 100)</p>
+<p><code>parentListId</code>: Country master Id (List Id 56) </p>
+<p><code>parentId</code>: Country Id which is selected (List Id 56, Saudi Arabia)</p>
+<h4 id="example-for-city">Example for City:</h4>
+<p><code>listId</code>: City LookupId from master list (List Id 101)</p>
+<p><code>parentListId</code>: Region master Id (List Id 100)</p>
+<p><code>parentId</code>: Region Id which is selected (List Id 100, Riyadh)</p>
 </div>
 
 
