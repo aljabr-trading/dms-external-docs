@@ -5,20 +5,19 @@ hide:
 
 ## API endpoint
 
-
 ```
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
-``` 
+```
 
 <a><span class="http-get">POST</span></a> `/v1/leads/bulks`
 
-
 ---
-Refere the comment  <span class="flag-required"> //Mandatory</span>  means the property is required 
+
+Refere the comment <span class="flag-required"> //Mandatory</span> means the property is required
 
 ### 📌 API
- 
+
 sample data with reference of master list mapping
 
 #### Request Mapping
@@ -84,15 +83,13 @@ sample data with reference of master list mapping
 }
 ```
 
-
-
-
-#### Request Body <span class="flag-required"></span> 
+#### Request Body <span class="flag-required"></span>
 
 Below are the possible values for creating lead and properties will be mandatory or optionals based on business conditions and type of the leads
 
-!!!Note 
+!!!Note
     Minimum 1 Lead and Maximum 20 leads per request will be allowed and for each lead minimum one vehicle details and maximum 5 vehicle details will be allowed.
+
 <!--
 ```json
 {
@@ -157,7 +154,8 @@ Below are the possible values for creating lead and properties will be mandatory
 ```
 -->
 
-#### Lead Type : Company  (Sample Json)
+#### Lead Type : Company (Sample Json)
+
 ```json
 {
   "leads": [                                                    // Minimum 1 & Maximum 20
@@ -215,82 +213,80 @@ Below are the possible values for creating lead and properties will be mandatory
 
 ```
 
-#### Lead Type : Individual  (Sample Json)
+#### Lead Type : Individual (Sample Json)
 
 ```json
 {
-  "leads": [                                            // Minimum 1 & Maximum 20
+  "leads": [                                                      // Minimum 1 & Maximum 20
     {
-      "leadType": "Individual",                         // Mandatory
+      "leadType": "Individual",                                   // Mandatory
       "title": "Mr",
       "gender": "Male",
-      "nationality": "Saudi Arabian",                   // Mandatory
-      "firstName": "",                                  // Mandatory
+      "nationality": "Saudi Arabian",                             // Mandatory
+      "firstName": "",                                            // Mandatory
       "middleName": "",
       "lastName": "",
-      "contactName": "", 
-      "companyName": "", 
-      "companyIndustryType": "", 
+      "contactName": "",
+      "companyName": "",
+      "companyIndustryType": "",
       "dateOfBirth": "yyyy-MM-dd",
       "occupation": "",
-      "customerCountry": "Saudi Arabia",                // Mandatory
-      "customerRegion": "Riyadh",                       // Mandatory
-      "customerCity": "Afif",                           // Mandatory
+      "customerCountry": "Saudi Arabia",                          // Mandatory
+      "customerRegion": "Riyadh",                                 // Mandatory
+      "customerCity": "Afif",                                     // Mandatory
       "address1": "",
       "address2": "",
-      "phoneCode": "00966",                             // Mandatory
-      "phoneNumber": "",                                // Mandatory
+      "phoneCode": "00966",                                       // Mandatory
+      "phoneNumber": "",                                          // Mandatory
       "email": "",
       "monthlyIncome": "5000-10000 SAR",
-      "preferredLanguage": "Arabic",                    // Mandatory
+      "preferredLanguage": "Arabic",                              // Mandatory
       "preferredContactType": "Email",
-      "company": "JTC",                                 // Mandatory
-      "brand": "KIA",                                   // Mandatory
-      "businessArea": "Sales",                          // Mandatory
+      "company": "JTC",                                           // Mandatory
+      "brand": "KIA",                                             // Mandatory
+      "businessArea": "Sales",                                    // Mandatory
       "branch": "string",
       "leadDate": "yyyy-MM-dd",
-      "interest": "Price Quote",                         // Mandatory
-      "source": "Direct Contact",                        // Mandatory
-      "subSource": "Email",                              // Mandatory
-      "leadName": "",                                    // Mandatory
+      "interest": "Price Quote",                                  // Mandatory
+      "source": "Direct Contact",                                 // Mandatory
+      "subSource": "Email",                                       // Mandatory
+      "leadName": "",                                             // Mandatory
       "leadReference": "",
       "leadNote": "",
       "vehicleType": "New",
-      "vehicles": [          // Minimum 1 & Maximum 5    // Mandatory
+      "vehicles": [                   // Minimum 1 & Maximum 5    // Mandatory
         {
-          "modelFamily": "RIO",                          // Mandatory
+          "modelFamily": "RIO",                                   // Mandatory
           "modelYear": "2024",
           "modelMemo": "",
           "modelPreferences": "",
-          "totalQty": 1                                  // Mandatory
+          "totalQty": 1                                           // Mandatory
         }
       ],
       "purchasePlan": "Within 30 Days",
       "paymentMode": "Credit",
       "currency": "SAR",
-      "priority": "Warm",                                // Mandatory
-      "testDriveRequired": true,                         // Mandatory
-      "acceptNewsLetter": true,                          // Mandatory
-      "acceptMarketing": true,                           // Mandatory
-      "acceptPrivatePolicy": true                        // Mandatory
+      "priority": "Warm",                                         // Mandatory
+      "testDriveRequired": true,                                  // Mandatory
+      "acceptNewsLetter": true,                                   // Mandatory
+      "acceptMarketing": true,                                    // Mandatory
+      "acceptPrivatePolicy": true                                 // Mandatory
     }
   ],
   "isProcessed": 1
 }
-
 ```
-
 
 #### Response
 
 ```json
 integer
 ```
-!!!warning "Maximum 20 leads are allowed"
----
 
+!!!warning 
+    "Maximum 20 leads are allowed"
 
-#### leadType <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> leadType: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_TYPE}`
 
@@ -300,164 +296,156 @@ integer
     1. `firstName`
 
     When `leadType` value is Company, the following fields will be **mandatory**:
-    
+
     1. `companyIndustryType`
     2. `contactName`
     3. `companyName`
 
-
-#### companyIndustryType 
+#### companyIndustryType: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_INDUSTRY_TYPE}`
 
-#### contactName:`string`
+#### contactName: `string`
 
-#### companyName:`string`
+#### companyName: `string`
 
-#### title
+#### title: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{TITLE}`
 
-#### nationality
+#### nationality: `string`
 
 <a"><span class="http-get">GET</span></a> `/v1/list/{NATIONALITY}`
 
-#### gender
+#### gender: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{GENDER}`
 
-#### firstName:`string`
+#### firstName: `string`
 
-#### lastName:`string`
+#### lastName: `string`
 
-#### middleName:`string`
+#### middleName: `string`
 
-#### dateOfBirth:`yyyy-MM-dd` 
+#### dateOfBirth: `yyyy-MM-dd`
 
-#### occupation:`string`
+#### occupation: `string`
 
-#### customerCountry <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> customerCountry: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{COUNTRY}`  
+<a><span class="http-get">GET</span></a> `/v1/list/{COUNTRY}`
 
-#### customerRegion <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> customerRegion: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{REGION}?parentId={customerCountry.value}`
 
-#### customerCity <span class="flag-required">*</span>
+####<span class="flag-required">\*</span> customerCity: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CITY}?parentId={customerRegion.value}`
 
-#### address1:`string`
+#### address1: `string`
 
-#### address2:`string`
+#### address2: `string`
 
-#### phoneCode <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> phoneCode: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PHONE_CODE}`
 
-#### phoneNumber:`string`
+#### phoneNumber: `string`
 
 !!! note "phoneNumber length should be 9 characters"
 
-#### email:`string`
+#### email: `string`
 
-#### monthlyIncome
+#### monthlyIncome: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_MONTHLY_INCOME}`
 
-#### preferredLanguage <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> preferredLanguage: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LANGUAGE}`
 
-#### preferredContactType
+#### preferredContactType: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CONTACT_TYPE}`
 
-#### company:`JTC`
+#### company: `string`
 
-#### ou <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> ou: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{OU_TYPE}`
 
-#### businessArea <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> businessArea: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}`
 
-#### branch <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> branch: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}`
 
-#### leadDate:`string` <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> leadDate: `string`
 
-#### leadInterest <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> leadInterest: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_INTEREST}`
 
-#### source <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> source: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SOURCE}`
 
-#### subSource <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> subSource: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}`
 
-#### leadName:`string` <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> leadName: `string`
 
-#### leadReference:`string`
+#### leadReference: `string`
 
-#### leadNote:`string`
+#### leadNote: `string`
 
-#### vehicleType
+#### vehicleType: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
 
-#### vehicles.modelFamily    
+#### vehicles: `array`
+!!! info 
+    #### modelFamily: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
+    <a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
 
-#### vehicles.modelYear
+    #### modelYear: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
+    <a><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
 
-<!-- should I keep as not in json -->
-#### vehicles.modelMemo:`string`
+    <!-- should I keep as not in json -->
+    #### modelMemo: `string`
 
-<!-- should I keep as not in json -->
-#### vehicles.modelPreferences:`string`
+    <!-- should I keep as not in json -->
+    #### modelPreferences: `string`
 
-<!-- should I keep as not in json -->
-#### vehicles.totalQty:`string`
+    <!-- should I keep as not in json -->
+    #### totalQty: `string`
 
-
-#### purchasePlan
+#### purchasePlan: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PURCHASE_PLAN}`
 
-#### paymentMode
+#### paymentMode: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{PAYMENT_MODE}`
 
-#### currency
+#### currency: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{CURRENCY}`
 
-#### priority <span class="flag-required">*</span>
+#### <span class="flag-required">\*</span> priority: `string`
 
 <a><span class="http-get">GET</span></a> `/v1/list/{LEAD_PRIORITY}`
 
-#### testDriveRequired
+#### testDriveRequired: `boolean`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+#### acceptNewsLetter: `boolean`
 
-#### acceptNewsLetter
+#### acceptMarketing: `boolean`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
-
-#### acceptMarketing
-
-<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
-
-#### acceptPrivatePolicy
-
-<a><span class="http-get">GET</span></a> `/v1/list/{YES_OR_NO}`
+#### acceptPrivatePolicy: `boolean`
