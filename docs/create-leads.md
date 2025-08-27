@@ -288,7 +288,7 @@ integer
 
 #### <span class="flag-required">\*</span> leadType: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={CUSTOMER_TYPE}`
 
 !!! note "Mandatory Fields for Company Lead Type"
     When `leadType` value is Individual, the following fields are mandatory
@@ -303,7 +303,7 @@ integer
 
 #### companyIndustryType: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{CUSTOMER_INDUSTRY_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={CUSTOMER_INDUSTRY_TYPE}`
 
 #### contactName: `string`
 
@@ -311,15 +311,15 @@ integer
 
 #### title: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{TITLE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={TITLE}`
 
 #### nationality: `string`
 
-<a"><span class="http-get">GET</span></a> `/v1/list/{NATIONALITY}`
+<a"><span class="http-get">GET</span></a> `/v1/leads/list?listId={NATIONALITY}`
 
 #### gender: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{GENDER}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={GENDER}`
 
 #### firstName: `string`
 
@@ -333,15 +333,15 @@ integer
 
 #### <span class="flag-required">\*</span> customerCountry: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{COUNTRY}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={COUNTRY}`
 
 #### <span class="flag-required">\*</span> customerRegion: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{REGION}?parentId={customerCountry.value}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={REGION}&parentId={customerCountry.value}`
 
 ####<span class="flag-required">\*</span> customerCity: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{CITY}?parentId={customerRegion.value}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={CITY}&parentId={customerRegion.value}`
 
 #### address1: `string`
 
@@ -349,7 +349,7 @@ integer
 
 #### <span class="flag-required">\*</span> phoneCode: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{PHONE_CODE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={PHONE_CODE}`
 
 #### phoneNumber: `string`
 
@@ -359,43 +359,39 @@ integer
 
 #### monthlyIncome: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_MONTHLY_INCOME}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LEAD_MONTHLY_INCOME}`
 
 #### <span class="flag-required">\*</span> preferredLanguage: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LANGUAGE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LANGUAGE}`
 
 #### preferredContactType: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{CONTACT_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={CONTACT_TYPE}`
 
 #### company: `string`
 
 #### <span class="flag-required">\*</span> ou: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{OU_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={OU_TYPE}`
 
 #### <span class="flag-required">\*</span> businessArea: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}`
-
-#### <span class="flag-required">\*</span> branch: `string`
-
-<a><span class="http-get">GET</span></a> `/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={BUSINESS_AREA}&parentId={ou_type.value}`
 
 #### <span class="flag-required">\*</span> leadDate: `string`
 
 #### <span class="flag-required">\*</span> leadInterest: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_INTEREST}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LEAD_INTEREST}`
 
 #### <span class="flag-required">\*</span> source: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SOURCE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LEAD_SOURCE}`
 
 #### <span class="flag-required">\*</span> subSource: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LEAD_SUB_SOURCE}&parentId={lead_source.value}`
 
 #### <span class="flag-required">\*</span> leadName: `string`
 
@@ -405,17 +401,17 @@ integer
 
 #### vehicleType: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{VEHICLE_TYPE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={VEHICLE_TYPE}`
 
 #### vehicles: `array`
 !!! info 
     #### modelFamily: `string`
 
-    <a><span class="http-get">GET</span></a> `/v1/list/{MODEL}?parentId={ou_type.value}`
+    <a><span class="http-get">GET</span></a> `/v1/leads/list?listId={MODEL_FAMILY}&parentId={ou_type.value}`
 
     #### modelYear: `string`
 
-    <a><span class="http-get">GET</span></a> `/v1/list/{MODEL_YEAR}`
+    <a><span class="http-get">GET</span></a> `/v1/leads/list?listId={MODEL_YEAR}`
 
     <!-- should I keep as not in json -->
     #### modelMemo: `string`
@@ -428,19 +424,19 @@ integer
 
 #### purchasePlan: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{PURCHASE_PLAN}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={PURCHASE_PLAN}`
 
 #### paymentMode: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{PAYMENT_MODE}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={PAYMENT_MODE}`
 
 #### currency: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{CURRENCY}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={CURRENCY}`
 
 #### <span class="flag-required">\*</span> priority: `string`
 
-<a><span class="http-get">GET</span></a> `/v1/list/{LEAD_PRIORITY}`
+<a><span class="http-get">GET</span></a> `/v1/leads/list?listId={LEAD_PRIORITY}`
 
 #### testDriveRequired: `boolean`
 

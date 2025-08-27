@@ -585,15 +585,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#branch-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      * branch: string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#leaddate-string" class="md-nav__link">
     <span class="md-ellipsis">
       * leadDate: string
@@ -1157,15 +1148,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#branch-string" class="md-nav__link">
-    <span class="md-ellipsis">
-      * branch: string
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#leaddate-string" class="md-nav__link">
     <span class="md-ellipsis">
       * leadDate: string
@@ -1655,7 +1637,7 @@
 <p>"Maximum 20 leads are allowed"</p>
 </div>
 <h4 id="leadtype-string"><span class="flag-required">*</span> leadType: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{CUSTOMER_TYPE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={CUSTOMER_TYPE}</code></p>
 <div class="admonition note">
 <p class="admonition-title">Mandatory Fields for Company Lead Type</p>
 <p>When <code>leadType</code> value is Individual, the following fields are mandatory</p>
@@ -1670,67 +1652,65 @@
 </ol>
 </div>
 <h4 id="companyindustrytype-string">companyIndustryType: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{CUSTOMER_INDUSTRY_TYPE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={CUSTOMER_INDUSTRY_TYPE}</code></p>
 <h4 id="contactname-string">contactName: <code>string</code></h4>
 <h4 id="companyname-string">companyName: <code>string</code></h4>
 <h4 id="title-string">title: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{TITLE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={TITLE}</code></p>
 <h4 id="nationality-string">nationality: <code>string</code></h4>
-<p><a"><span class="http-get">GET</span></a> <code>/v1/list/{NATIONALITY}</code></p>
+<p><a"><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={NATIONALITY}</code></p>
 <h4 id="gender-string">gender: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{GENDER}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={GENDER}</code></p>
 <h4 id="firstname-string">firstName: <code>string</code></h4>
 <h4 id="lastname-string">lastName: <code>string</code></h4>
 <h4 id="middlename-string">middleName: <code>string</code></h4>
 <h4 id="dateofbirth-yyyy-mm-dd">dateOfBirth: <code>yyyy-MM-dd</code></h4>
 <h4 id="occupation-string">occupation: <code>string</code></h4>
 <h4 id="customercountry-string"><span class="flag-required">*</span> customerCountry: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{COUNTRY}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={COUNTRY}</code></p>
 <h4 id="customerregion-string"><span class="flag-required">*</span> customerRegion: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{REGION}?parentId={customerCountry.value}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={REGION}&amp;parentId={customerCountry.value}</code></p>
 <h4 id="customercity-string"><span class="flag-required">*</span> customerCity: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{CITY}?parentId={customerRegion.value}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={CITY}&amp;parentId={customerRegion.value}</code></p>
 <h4 id="address1-string">address1: <code>string</code></h4>
 <h4 id="address2-string">address2: <code>string</code></h4>
 <h4 id="phonecode-string"><span class="flag-required">*</span> phoneCode: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{PHONE_CODE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={PHONE_CODE}</code></p>
 <h4 id="phonenumber-string">phoneNumber: <code>string</code></h4>
 <div class="admonition note">
 <p class="admonition-title">phoneNumber length should be 9 characters</p>
 </div>
 <h4 id="email-string">email: <code>string</code></h4>
 <h4 id="monthlyincome-string">monthlyIncome: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LEAD_MONTHLY_INCOME}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LEAD_MONTHLY_INCOME}</code></p>
 <h4 id="preferredlanguage-string"><span class="flag-required">*</span> preferredLanguage: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LANGUAGE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LANGUAGE}</code></p>
 <h4 id="preferredcontacttype-string">preferredContactType: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{CONTACT_TYPE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={CONTACT_TYPE}</code></p>
 <h4 id="company-string">company: <code>string</code></h4>
 <h4 id="ou-string"><span class="flag-required">*</span> ou: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{OU_TYPE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={OU_TYPE}</code></p>
 <h4 id="businessarea-string"><span class="flag-required">*</span> businessArea: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{BUSINESS_AREA}?parentId={ou_type.value}</code></p>
-<h4 id="branch-string"><span class="flag-required">*</span> branch: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{BRANCH_TYPE}?parentId={branch_type.value}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={BUSINESS_AREA}&amp;parentId={ou_type.value}</code></p>
 <h4 id="leaddate-string"><span class="flag-required">*</span> leadDate: <code>string</code></h4>
 <h4 id="leadinterest-string"><span class="flag-required">*</span> leadInterest: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LEAD_INTEREST}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LEAD_INTEREST}</code></p>
 <h4 id="source-string"><span class="flag-required">*</span> source: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LEAD_SOURCE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LEAD_SOURCE}</code></p>
 <h4 id="subsource-string"><span class="flag-required">*</span> subSource: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LEAD_SUB_SOURCE}?parentId={lead_source.value}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LEAD_SUB_SOURCE}&amp;parentId={lead_source.value}</code></p>
 <h4 id="leadname-string"><span class="flag-required">*</span> leadName: <code>string</code></h4>
 <h4 id="leadreference-string">leadReference: <code>string</code></h4>
 <h4 id="leadnote-string">leadNote: <code>string</code></h4>
 <h4 id="vehicletype-string">vehicleType: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{VEHICLE_TYPE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={VEHICLE_TYPE}</code></p>
 <h4 id="vehicles-array">vehicles: <code>array</code></h4>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <h4 id="modelfamily-string">modelFamily: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{MODEL}?parentId={ou_type.value}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={MODEL_FAMILY}&amp;parentId={ou_type.value}</code></p>
 <h4 id="modelyear-string">modelYear: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{MODEL_YEAR}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={MODEL_YEAR}</code></p>
 <!-- should I keep as not in json -->
 <h4 id="modelmemo-string">modelMemo: <code>string</code></h4>
 <!-- should I keep as not in json -->
@@ -1739,13 +1719,13 @@
 <h4 id="totalqty-string">totalQty: <code>string</code></h4>
 </div>
 <h4 id="purchaseplan-string">purchasePlan: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{PURCHASE_PLAN}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={PURCHASE_PLAN}</code></p>
 <h4 id="paymentmode-string">paymentMode: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{PAYMENT_MODE}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={PAYMENT_MODE}</code></p>
 <h4 id="currency-string">currency: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{CURRENCY}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={CURRENCY}</code></p>
 <h4 id="priority-string"><span class="flag-required">*</span> priority: <code>string</code></h4>
-<p><a><span class="http-get">GET</span></a> <code>/v1/list/{LEAD_PRIORITY}</code></p>
+<p><a><span class="http-get">GET</span></a> <code>/v1/leads/list?listId={LEAD_PRIORITY}</code></p>
 <h4 id="testdriverequired-boolean">testDriveRequired: <code>boolean</code></h4>
 <h4 id="acceptnewsletter-boolean">acceptNewsLetter: <code>boolean</code></h4>
 <h4 id="acceptmarketing-boolean">acceptMarketing: <code>boolean</code></h4>

@@ -9,7 +9,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
 ## Master List (for reference)
-<span class="http-get">GET</span> `/v1/leads/listmaster`
+<span class="http-get">GET</span> `/v1/leads/master-list`
 
 !!!Note
     This provide the Master list we are using in the create lead. Based on List Id, you can get the specific list.
