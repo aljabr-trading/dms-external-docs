@@ -222,7 +222,7 @@ Below are the possible values for creating lead and properties will be mandatory
       "leadType": "Individual",                                   // Mandatory
       "title": "Mr",
       "gender": "Male",
-      "nationality": "Saudi Arabian",                             // Mandatory
+      "nationality": "Saudi Arabian",
       "firstName": "",                                            // Mandatory
       "middleName": "",
       "lastName": "",
