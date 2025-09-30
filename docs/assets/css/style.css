@@ -6,8 +6,16 @@
   border-radius: 4px;
   font-weight: bold;
 }
+
 .http-get {
   background-color: #61affe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.http-post {
+  background-color: #49cc90;
   padding: 2px 6px;
   border-radius: 4px;
   color: #fff;

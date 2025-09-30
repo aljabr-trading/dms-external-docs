@@ -10,11 +10,11 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-<a><span class="http-get">POST</span></a> `/v1/leads/bulks`
+<a><span class="http-post">POST</span></a> `/v1/leads/bulks-direct`
 
 ---
 
-Refere the comment <span class="flag-required"> //Mandatory</span> means the property is required
+Refer the comment <span class="flag-required"> //Mandatory</span> means the property is required
 
 ### 📌 API
 
@@ -280,8 +280,35 @@ Below are the possible values for creating lead and properties will be mandatory
 #### Response
 
 ```json
-integer
+{
+  "leads": [
+    {
+      "leadId": 1,                                                // Incremental ID
+      "errorList": null
+      ...
+    },
+    {
+      "leadId": 2,                                                // Incremental ID
+      "errorList": null
+      ...
+    }
+  ],
+  "createdDate": "2025-09-30T09:23:03.683",
+  "createdBy": 4,
+  "totalRecords": 10,
+  "errorRecords": 0,
+  "isProcessed": 4                                                // Processed Status
+}
 ```
+
+!!!Notes
+    `errorRecords` states the error count
+        
+    `leads` states list of leads which are sent against this Id
+
+        `leadId` created in DMS
+
+        `errorList` explains the errors that is occurring against the `leadId`
 
 !!!warning 
     "Maximum 20 leads are allowed"
