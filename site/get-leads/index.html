@@ -414,15 +414,17 @@
 <a><span class="http-get">GET</span></a> <code>/v1/leads/bulks</code></p>
 <h3 id="query-parameters">Query Parameters</h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>id: long
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>fromDate: string (Eg: 2025-08-24T21:00:00.000Z)
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>toDate: string (Eg: 2025-08-24T21:00:00.000Z)
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>source: integer (optional)
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>subSource: integer (optional)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>leadId: long
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>fromDate: string (Eg: 2025-08-24T21:00:00.000Z)
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>toDate: string (Eg: 2025-08-24T21:00:00.000Z)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>source: integer (optional)
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>subSource: integer (optional)
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In this request, either <code>id</code> or <code>fromDate</code> and <code>toDate</code> is mandatory.
-Also, date range should be 7 days</p>
+<p>Either <code>id</code> or <code>leadId</code> and <code>fromDate</code> and <code>toDate</code> is mandatory.
+Also, date range should be 7 days
+In case <code>leadId</code> given with date range, respective lead info alone will retrieve</p>
 </div>
 <h4 id="response">Response  <!-- confirmed by mr kripa about keeping the time --></h4>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
