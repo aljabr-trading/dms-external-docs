@@ -14,6 +14,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 
 ```
 id: long
+leadId: long
 fromDate: string (Eg: 2025-08-24T21:00:00.000Z)
 toDate: string (Eg: 2025-08-24T21:00:00.000Z)
 source: integer (optional)
@@ -21,8 +22,9 @@ subSource: integer (optional)
 ``` 
 
 !!!Note 
-    In this request, either `id` or `fromDate` and `toDate` is mandatory.
+    Either `id` or `leadId` and `fromDate` and `toDate` is mandatory.
     Also, date range should be 7 days
+    In case `leadId` given with date range, respective lead info alone will retrieve
 
 #### Response  <!-- confirmed by mr kripa about keeping the time -->
 ```json
