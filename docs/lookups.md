@@ -236,6 +236,35 @@ parentId: integer (default: 0)
 lang: string (default "en") "en" | "ar"
 ``` 
 
+This will provide the master list based on the language provided, default is en
+
+### Response
+
+```json
+[
+  {
+    "listName": "Company",
+    "id": 1,
+    "text": "JTC",                                // Text based on lang passed
+    "code": "JTC",
+    "listId": 0,
+    "parentListId": 0,
+    "parentId": 0,
+    "regularExpression": ""
+  },
+  {
+    "listName": "Branch",
+    "id": 1,
+    "text": "الرياض - القادسية",                // Text based on lang passed
+    "code": "LYK1",
+    "listId": 1,
+    "parentListId": 0,
+    "parentId": 0,
+    "regularExpression": ""
+  }
+]
+```
+
 ## Branch list (with language specific)
 <span class="http-get">GET</span> `/v2/leads/branchlist`
 
@@ -247,3 +276,38 @@ regionId: integer (default: 0)
 cityId: integer (default: 0)
 lang: string (default "en") "en" | "ar"
 ``` 
+
+This will provide the branch list based on the language provided, default is en
+
+### Response
+
+```json
+[
+  {
+    "branchId": 1,
+    "branchCode": "LYK1",
+    "branchText": "الرياض - القادسية",          // Branch Text based on lang passed
+    "countryId": 1,
+    "countryText": "المملكة العربية السعودية",
+    "description": "Riyadh - Al Qadisiyyah",
+    "regionId": 2,
+    "regionName": "الوسطى",
+    "cityId": 3,
+    "cityText": "الرياض",
+    "location": "https://maps.app.goo.gl/vuoRhXymXwkZNLRG7"
+  },
+  {
+    "branchId": 2,
+    "branchCode": "LYK2",
+    "branchText": "الدمام - طريق الملك فهد",
+    "countryId": 1,
+    "countryText": "المملكة العربية السعودية",
+    "description": "Dammam - Rakah Showroom",
+    "regionId": 1,
+    "regionName": "الشرقية",
+    "cityId": 1,
+    "cityText": "الدمام",
+    "location": "https://maps.app.goo.gl/z2Cnp6N5PD5zAjiD7"
+  },
+]
+```
