@@ -160,7 +160,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
     "parentListName": "Lead Source"
   },
   {
-    "listName": "Lead Intrerest",
+    "listName": "Lead Interest",
     "List Id": 74,
     "parentList Id": 0,
     "parentListName": ""
@@ -193,7 +193,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
  
 ```
 
-## Master list based on lookup types
+## Master list based on lookup types (without language specific)
 <span class="http-get">GET</span> `/v1/leads/list`
 
 ### Query Parameters
@@ -223,3 +223,27 @@ List Id will get the drop down list based on lookuptype
     `parentListId`: Region master Id (List Id 100)
 
     `parentId`: Region Id which is selected (List Id 100, Riyadh)
+
+## Master list based on lookup types (with language specific)
+<span class="http-get">GET</span> `/v2/leads/list`
+
+### Query Parameters
+
+```
+listId: integer (default: 0)
+parentListId: integer (default: 0)
+parentId: integer (default: 0)
+lang: string (default "en") "en" | "ar"
+``` 
+
+## Branch list (with language specific)
+<span class="http-get">GET</span> `/v2/leads/branchlist`
+
+### Query Parameters
+
+```
+branchId: integer (default: 0)
+regionId: integer (default: 0)
+cityId: integer (default: 0)
+lang: string (default "en") "en" | "ar"
+``` 
