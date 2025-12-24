@@ -31,6 +31,7 @@ subSource: integer (optional)
 {
   "leads": [
     {
+      "leadExternalHeaderId": 532,
       "leadExternalId": 574,
       "leadId": 0,
       "isError": 0,

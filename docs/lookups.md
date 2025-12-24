@@ -271,7 +271,7 @@ This will provide the master list based on the language provided, default is en
 ### Query Parameters
 
 ```
-branchId: integer (default: 0)
+brandId: integer (default: 0)
 departmentId: integer (default: 0)
 regionId: integer (default: 0)
 cityId: integer (default: 0)
