@@ -272,8 +272,10 @@ This will provide the master list based on the language provided, default is en
 
 ```
 branchId: integer (default: 0)
+departmentId: integer (default: 0)
 regionId: integer (default: 0)
 cityId: integer (default: 0)
+branchId: integer (default: 0)
 lang: string (default "en") "en" | "ar"
 ``` 
 
@@ -284,30 +286,44 @@ This will provide the branch list based on the language provided, default is en
 ```json
 [
   {
-    "branchId": 1,
-    "branchCode": "LYK1",
-    "branchText": "الرياض - القادسية",          // Branch Text based on lang passed
-    "countryId": 1,
-    "countryText": "المملكة العربية السعودية",
-    "description": "Riyadh - Al Qadisiyyah",
-    "regionId": 2,
-    "regionName": "الوسطى",
-    "cityId": 3,
-    "cityText": "الرياض",
-    "location": "https://maps.app.goo.gl/vuoRhXymXwkZNLRG7"
-  },
-  {
     "branchId": 2,
     "branchCode": "LYK2",
-    "branchText": "الدمام - طريق الملك فهد",
+    "branchText": "Dammam - Rakah Showroom",
     "countryId": 1,
-    "countryText": "المملكة العربية السعودية",
+    "countryText": "Saudi Arabia",
     "description": "Dammam - Rakah Showroom",
     "regionId": 1,
-    "regionName": "الشرقية",
+    "regionText": "Eastern",
     "cityId": 1,
-    "cityText": "الدمام",
-    "location": "https://maps.app.goo.gl/z2Cnp6N5PD5zAjiD7"
+    "cityText": "Dammam",
+    "addressText": "Al Rakah Ash Shamaliyah, Dammam",
+    "brandId": 3,
+    "brandText": "Lynk&Co",
+    "brandCode": "LYNKCO",
+    "departmentId": 2,
+    "departmentText": "Sales",
+    "location": "https://maps.app.goo.gl/z2Cnp6N5PD5zAjiD7",
+    "notesText": null
+  },
+  {
+    "branchId": 4,
+    "branchCode": "JMC1",
+    "branchText": "Dammam - Rakah Showroom",
+    "countryId": 1,
+    "countryText": "Saudi Arabia",
+    "description": "Dammam - Rakah Showroom",
+    "regionId": 1,
+    "regionText": "Eastern",
+    "cityId": 1,
+    "cityText": "Dammam",
+    "addressText": "Al Rakah Ash Shamaliyah, Dammam",
+    "brandId": 2,
+    "brandText": "JMC",
+    "brandCode": "JMC",
+    "departmentId": 2,
+    "departmentText": "Sales",
+    "location": "https://maps.app.goo.gl/kqM6z5VAfL4kNKCa7",
+    "notesText": null
   },
 ]
 ```
