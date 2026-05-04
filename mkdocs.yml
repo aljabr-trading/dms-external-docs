@@ -10,7 +10,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_index:     !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
@@ -27,6 +27,9 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Master List: lookups.md
-  - Create Leads: create-leads.md
-  - Get Leads: get-leads.md
+  - Lead:
+    - Master List: lookups.md
+    - Create Leads: create-leads.md
+    - Get Leads: get-leads.md
+  - Campaign:
+    - Campaign API: get-campaigns.md
