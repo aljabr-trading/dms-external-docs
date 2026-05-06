@@ -8,7 +8,7 @@ Base URL
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
-<a><span class="http-get">GET</span></a> `/v1/campaign/details`
+<a><span class="http-get">GET</span></a> `/v1/marketing/campaign/details`
 
 ### Query Parameters
 
