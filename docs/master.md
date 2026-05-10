@@ -9,7 +9,13 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
 ## Master List (for reference)
-<span class="http-get">GET</span> `/v1/core/master-list`
+<span class="http-get">GET</span> `/v1/core/masterlist`
+
+### Query Parameters
+
+```
+lang: string (default "en") "en" | "ar"
+``` 
 
 !!!Note
     This provide the Master list we are using in the create lead. Based on List Id, you can get the specific list.
@@ -193,39 +199,8 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
  
 ```
 
-## Master list based on lookup types (without language specific)
-<span class="http-get">GET</span> `/v1/core/list`
-
-### Query Parameters
-
-```
-listId: integer
-parentListId: integer(optional)
-parentId: integer (optional)  
-``` 
-List Id will get the drop down list based on lookuptype
-!!!Note
-    Refer the List Id from master lookup list
-    parentList Id and parentId: applicable for Region and City
-    
-    #### Example for Region: 
-
-    `listId`: Region LookupId from master list (List Id 100)
-
-    `parentListId`: Country master Id (List Id 56) 
-
-    `parentId`: Country Id which is selected (List Id 56, Saudi Arabia)
-    
-    #### Example for City: 
-
-    `listId`: City LookupId from master list (List Id 101)
-
-    `parentListId`: Region master Id (List Id 100)
-
-    `parentId`: Region Id which is selected (List Id 100, Riyadh)
-
 ## Master list based on lookup types (with language specific)
-<span class="http-get">GET</span> `/v2/core/list`
+<span class="http-get">GET</span> `/v1/core/list`
 
 ### Query Parameters
 
@@ -266,7 +241,7 @@ This will provide the master list based on the language provided, default is en
 ```
 
 ## Branch list (with language specific)
-<span class="http-get">GET</span> `/v2/core/branchlist`
+<span class="http-get">GET</span> `/v1/core/branchlist`
 
 ### Query Parameters
 
