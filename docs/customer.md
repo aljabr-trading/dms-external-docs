@@ -30,7 +30,7 @@ lang: string
     - `mobileNumber` must start with `5`.
 
     **At least one of the following fields must be provided:**
-    
+
     - `customerId`
 
     - `identificationNo`
@@ -42,10 +42,10 @@ lang: string
     **Example:**
 
     - **companyCode:** `jtc`
-    - **customerId:** `12345`
+    - **customerId:** `54218`
     - **identificationNo:** `2103232123`
-    - **mobileNumber:** `512345678`
-    - **referenceNo:** `REF-1001`
+    - **mobileNumber:** `568617084`
+    - **referenceNo:** `333215`
     - **lang:** `ar`
   
  
