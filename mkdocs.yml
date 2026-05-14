@@ -29,6 +29,7 @@ nav:
   - Home: index.md
   - Core:
     - Master: master.md
+    - Customer: customer.md
   - Lead:
     - Master List: master-list.md
     - Create Leads: create-leads.md
