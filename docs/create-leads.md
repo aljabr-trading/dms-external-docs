@@ -29,7 +29,7 @@ sample data with reference of master list mapping
       "leadType": "Company", (List Id : 27 eg : Company)
       "title": "Mr", (List Id : 50 eg : Mr)
       "gender": "Male", (List Id : 52 eg: Male)
-      "nationality": "Saudi Arabian", (List Id : 51 eg : Saudi Arabian)
+      "nationality": "Saudi", (List Id : 51 eg : Saudi)
       "firstName": "Abdullah", (user input eg : Abdullah)
       "middleName": "Mobarak", (user input eg : Mobarak)
       "lastName": "Careem", (user input eg : Careem)
@@ -98,7 +98,7 @@ Below are the possible values for creating lead and properties will be mandatory
       "leadType": "Company/Individual",
       "title": "Mr",
       "gender": "Male",
-      "nationality": "Saudi Arabian",
+      "nationality": "Saudi",
       "firstName": "Abdullah",
       "middleName": "Mobarak",
       "lastName": "Careem",
@@ -222,7 +222,7 @@ Below are the possible values for creating lead and properties will be mandatory
       "leadType": "Individual",                                   // Mandatory
       "title": "Mr",
       "gender": "Male",
-      "nationality": "Saudi Arabian",
+      "nationality": "Saudi",
       "firstName": "",                                            // Mandatory
       "middleName": "",
       "lastName": "",
