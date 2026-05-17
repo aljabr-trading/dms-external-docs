@@ -54,44 +54,6 @@ lang: string
 ```json
 [
   {
-    "customerContacts": [
-      {
-        "contactId": 1,
-        "customerId": 54218,
-        "customer": null,
-        "contactNumber": "568617083",
-        "relationTypeId": 3,
-        "relationType": "صديق",
-        "contactName": null,
-        "contactPhoneCodeId": null,
-        "phoneCode": "00966",
-        "primaryContact": false,
-        "contactStartDate": null,
-        "contactEndDate": null,
-        "isActive": true,
-        "contactIsEnable": null,
-        "profession": "Test",
-        "remarks": ""
-      },
-      {
-        "contactId": 2,
-        "customerId": 54218,
-        "customer": null,
-        "contactNumber": "568617086",
-        "relationTypeId": 6,
-        "relationType": "أخ",
-        "contactName": null,
-        "contactPhoneCodeId": null,
-        "phoneCode": "00966",
-        "primaryContact": false,
-        "contactStartDate": null,
-        "contactEndDate": null,
-        "isActive": true,
-        "contactIsEnable": null,
-        "profession": "Brother Prof",
-        "remarks": ""
-      }
-    ],
     "versionId": 103932,
     "customerId": 54218,
     "customerVersionId": 1,
@@ -151,7 +113,45 @@ lang: string
     "endDate": null,
     "citySubDivisionName": null,
     "postalCode": "31202",
-    "userActive": 1
+    "userActive": 1,
+    "customerContacts": [
+      {
+        "contactId": 1,
+        "customerId": 54218,
+        "customer": null,
+        "contactNumber": "568617083",
+        "relationTypeId": 3,
+        "relationType": "صديق",
+        "contactName": null,
+        "contactPhoneCodeId": null,
+        "phoneCode": "00966",
+        "primaryContact": false,
+        "contactStartDate": null,
+        "contactEndDate": null,
+        "isActive": true,
+        "contactIsEnable": null,
+        "profession": "Test",
+        "remarks": ""
+      },
+      {
+        "contactId": 2,
+        "customerId": 54218,
+        "customer": null,
+        "contactNumber": "568617086",
+        "relationTypeId": 6,
+        "relationType": "أخ",
+        "contactName": null,
+        "contactPhoneCodeId": null,
+        "phoneCode": "00966",
+        "primaryContact": false,
+        "contactStartDate": null,
+        "contactEndDate": null,
+        "isActive": true,
+        "contactIsEnable": null,
+        "profession": "Brother Prof",
+        "remarks": ""
+      }
+    ]
   }
 ]
 ```
