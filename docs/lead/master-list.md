@@ -3,6 +3,7 @@ hide:
   - toc
 ---
 
+Base URL
 ```
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs

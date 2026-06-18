@@ -4,13 +4,12 @@ theme:
   logo: assets/logo/JTCLogoWhite.png
   favicon: assets/logo/JTCLogoBlack.png
 
-  
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index:     !!python/name:material.extensions.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
@@ -28,11 +27,24 @@ extra_css:
 nav:
   - Home: index.md
   - Core:
-    - Master: master.md
-    - Customer: customer.md
+      - Master: core/master.md
+      - Customer: core/customer.md
   - Lead:
-    - Master List: master-list.md
-    - Create Leads: create-leads.md
-    - Get Leads: get-leads.md
+      - Master List: lead/master-list.md
+      - Create Leads: lead/create-leads.md
+      - Get Leads: lead/get-leads.md
   - Marketing:
-    - Campaign: get-campaigns.md
+      - Campaign: marketing/get-campaigns.md
+  - Vehicle Details:
+      - Model Family: vehicle-details/model-family.md
+      - Variants: vehicle-details/model-family-variants.md
+      - Variant Specification: vehicle-details/by-vehicle-keys.md
+  - Test Drive:
+      - Bookings: testdrive/bookings.md
+      - Branch List: testdrive/branch-list.md
+      - Vehicle Stock List: testdrive/branch-vehicle-stock-list.md
+      - Vehicle Slot List: testdrive/branch-vehicle-slot-list.md
+      - Create: testdrive/create.md
+      - Quick Create: testdrive/create-quick.md
+      - Cancel: testdrive/cancel.md
+      - Reschedule: testdrive/reschedule.md
