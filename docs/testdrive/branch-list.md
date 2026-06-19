@@ -21,7 +21,7 @@ businessAreaId: integer
 regionId: integer (optional)
 cityId: integer (optional)
 branchId: integer (optional)
-lang: string
+lang: string (Default: en)
 ```
 
 !!! note

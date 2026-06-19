@@ -20,9 +20,12 @@ brandId: integer
 businessAreaId: integer
 branchId: integer (optional)
 isOpen: boolean (optional)
-searchText: string
+contactNo: string
+requestNo: string
+customerIdentificationNo: string
 pageNumber: integer
 pageSize: integer
+lang: string (Default: en)
 ```
 
 !!! note
@@ -32,7 +35,7 @@ pageSize: integer
     - **companyId:** `1`
     - **brandId:** `1`
     - **businessAreaId:** `2`
-    - **searchText:** `5686`
+    - **contactNo:** `5686`
     - **pageNumber:** `1`
     - **pageSize:** `10`
 
@@ -41,98 +44,80 @@ pageSize: integer
 ```json
 [
   {
-    "requestMasterId": 2725,
-    "requestText": "TD2725",
-    "customerId": -1,
-    "customerFirstName": "Param",
-    "customerLastName": "Kalidas",
-    "customerNumber": "568617083",
-    "contactName": null,
-    "fullContactNumber": "568617083",
     "companyId": 1,
     "brandId": 1,
     "departmentId": 2,
     "branchId": 10,
-    "branchName": null,
+    "branchName": "Dammam - Khobar Highway",
     "branchCode": "KIA1",
     "departmentName": "Sales",
-    "departmentNameAr": "مبيعات",
-    "requestedBranchName": null,
-    "requestedBranchNameAr": null,
+    "requestedBranchName": "Dammam - Khobar Highway",
+    "requestMasterId": 2733,
+    "requestNo": "TD2733",
+    "customerId": -1,
+    "customerFirstName": "Test",
+    "customerLastName": "string",
+    "customerNumber": "568617000",
+    "fullContactNumber": "00966568617000",
+    "customerCompanyId": 1,
     "isAllocated": true,
     "isSlotAvailable": true,
-    "slotTime": "09:00 AM - 09:20 AM",
-    "createdDate": null,
-    "assignDate": null,
-    "closeDate": null,
+    "slotTime": "08:00 AM - 08:20 AM",
     "statusId": 1,
     "statusName": "New",
-    "statusNameAr": "جديد",
     "allocations": [
       {
-        "allocationId": 2817,
+        "allocationId": 2823,
         "stockId": 21565,
-        "vinCode": "KNAAD8152R6008481",
         "familyName": "EV9",
-        "familyNameAr": "EV9",
-        "allocationTypeName": "Slot",
-        "allocationTypeNameAr": "موعد",
         "modelYear": 2024,
+        "allocationTypeId": 1,
+        "allocationTypeName": "Slot",
+        "vinCode": "KNAAD8152R6008481",
         "exteriorColor": "ICE GREEN",
         "interiorColor": "OSLO GRAY",
         "plateNoEn": "HER 3049",
-        "plateNoAr": "3049 ر ع ه",
-        "allocationTypeId": 1,
-        "startDate": "2026-06-22T09:00:00",
-        "endDate": "2026-06-22T09:20:00"
+        "startDate": "2026-06-18T08:00:00",
+        "endDate": "2026-06-18T08:20:00"
       }
     ]
   },
   {
-    "requestMasterId": 2690,
-    "requestText": "TD2690",
-    "customerId": 5896,
-    "customerFirstName": "Eman",
-    "customerLastName": "Abdullah Mohamed Al Salem",
-    "customerNumber": "568699441",
-    "contactName": null,
-    "fullContactNumber": "00966568699441",
     "companyId": 1,
     "brandId": 1,
     "departmentId": 2,
     "branchId": 10,
-    "branchName": null,
+    "branchName": "Dammam - Khobar Highway",
     "branchCode": "KIA1",
     "departmentName": "Sales",
-    "departmentNameAr": "مبيعات",
-    "requestedBranchName": null,
-    "requestedBranchNameAr": null,
+    "requestedBranchName": "Dammam - Khobar Highway",
+    "requestMasterId": 2732,
+    "requestNo": "TD2732",
+    "customerId": -1,
+    "customerFirstName": "Param",
+    "customerLastName": "Kalidas",
+    "customerNumber": "568617083",
+    "fullContactNumber": "568617083",
+    "customerCompanyId": 1,
     "isAllocated": true,
     "isSlotAvailable": true,
-    "slotTime": "02:30 PM - 02:50 PM",
-    "createdDate": null,
-    "assignDate": "2026-06-09T16:38:55.967",
-    "closeDate": null,
-    "statusId": 3,
-    "statusName": "In Progress",
-    "statusNameAr": "جاري العمل",
+    "slotTime": "08:30 PM - 08:50 PM",
+    "statusId": 1,
+    "statusName": "New",
     "allocations": [
       {
-        "allocationId": 2785,
-        "stockId": 21565,
-        "vinCode": "KNAAD8152R6008481",
-        "familyName": "EV9",
-        "familyNameAr": "EV9",
-        "allocationTypeName": "Slot",
-        "allocationTypeNameAr": "موعد",
-        "modelYear": 2024,
-        "exteriorColor": "ICE GREEN",
-        "interiorColor": "OSLO GRAY",
-        "plateNoEn": "HER 3049",
-        "plateNoAr": "3049 ر ع ه",
+        "allocationId": 2822,
+        "stockId": 132090,
+        "familyName": "Tasman",
+        "modelYear": 2026,
         "allocationTypeId": 1,
-        "startDate": "2026-06-11T14:30:00",
-        "endDate": "2026-06-11T14:50:00"
+        "allocationTypeName": "Slot",
+        "vinCode": "KNCSEY7B8T5005622",
+        "exteriorColor": "TAN BEIGE",
+        "interiorColor": "TERRACOTTA BROWN",
+        "plateNoEn": "TGB 8210",
+        "startDate": "2026-06-18T20:30:00",
+        "endDate": "2026-06-18T20:50:00"
       }
     ]
   }
