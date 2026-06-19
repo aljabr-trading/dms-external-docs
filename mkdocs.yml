@@ -27,7 +27,11 @@ extra_css:
 nav:
   - Home: index.md
   - Core:
-      - Master: core/master.md
+      - Master:
+        - Master List (Reference): core/master/masterlist.md
+        - Master List (Lookup Types): core/master/list.md
+        - Communication Messages: core/master/communication-messages.md
+        - Branch List: core/master/branchlist.md
       - Customer: core/customer.md
   - Lead:
       - Master List: lead/master-list.md
