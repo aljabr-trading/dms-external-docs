@@ -26,23 +26,23 @@ sample data with reference of master list mapping
 
 ```json
 {
-   "companyId": 1,                    // (default: 1)
-   "brandId": 1,                      // (listId: 2)
-   "businessAreaId": 2,               // (default: 2)
-   "branchId": 10,                    // (/v1/core/branchlist -> branchId)
-   "aptVehicleId": 212,               // (branch-vehicle-slot-list -> aptVehicleId)
-   "bookingDate": "2026-06-21",       // string (yyyy-mm-dd, eg: 2026-06-21)
-   "slotMasterId": 31,                // (branch-vehicle-slot-list -> slotMasterId)
-   "sourceId": 1,                     // (direct)
-   "subSourceId": 1,                  // (unified number)
-   "firstName": "Kirubaharan",
-   "lastName": "Palani",
-   "sendTestDriveConfirmation": true,
-   "communicationType": 0,            // (1->sms, 3->whatsapp)
+   "companyId": 1,                    // (default: 1) // Mandatory
+   "brandId": 1,                      // (listId: 2) // Mandatory
+   "businessAreaId": 2,               // (default: 2) // Mandatory
+   "branchId": 10,                    // (/v1/core/branchlist -> branchId) // Mandatory
+   "aptVehicleId": 212,               // (branch-vehicle-slot-list -> aptVehicleId) // Mandatory
+   "bookingDate": "2026-06-21",       // string (yyyy-mm-dd, eg: 2026-06-21) // Mandatory
+   "slotMasterId": 31,                // (branch-vehicle-slot-list -> slotMasterId) // Mandatory
+   "sourceId": 1,                     // (direct) // Mandatory
+   "subSourceId": 1,                  // (unified number) // Mandatory
+   "firstName": "Kirubaharan",        // Mandatory
+   "lastName": "Palani",              // Mandatory 
+   "sendTestDriveConfirmation": true, // Mandatory
+   "communicationType": 0,            // (1->sms, 3->whatsapp) // Mandatory
    "remarks": "",
-   "phoneCodeId": 1,                  // (default:1)
-   "phoneNumber": 551883151,          // (eg:5XXXXXXXX)
-   "countryId": 56,                   // (listId: 56)
+   "phoneCodeId": 1,                  // (default:1) // Mandatory
+   "phoneNumber": 551883151,          // (eg:5XXXXXXXX) // Mandatory
+   "countryId": 56,                   // (listId: 56) // Mandatory
    "regionId": 0,                     // optional (listId: 100)
    "cityId": 0,                       // optional (listId: 101)
    "email": "pkiruba85@gmail.com"     // optional (default: empty)
@@ -53,23 +53,23 @@ sample data with reference of master list mapping
 
 ```json
 {
-   "companyId": 1,                    // (default: 1)
-   "brandId": 1,                      // (listId: 2)
-   "businessAreaId": 2,               // (default: 2)
-   "branchId": 10,                    // (/v1/core/branchlist -> branchId)
-   "aptVehicleId": 212,               // (branch-vehicle-slot-list- aptVehicleId)
-   "bookingDate": "2026-06-21",       // string(yyyy-mm-dd,eg:2026-06-20)
-   "sourceId": 1,                     // (direct)
-   "subSourceId": 1,                  // (unified number)
-    "starttime": “09:00:00”,          // (HH:mm:ss, 24 hour format)
+   "companyId": 1,                    // (default: 1) // Mandatory
+   "brandId": 1,                      // (listId: 2) // Mandatory
+   "businessAreaId": 2,               // (default: 2) // Mandatory
+   "branchId": 10,                    // (/v1/core/branchlist -> branchId) // Mandatory
+   "aptVehicleId": 212,               // (branch-vehicle-slot-list- aptVehicleId) // Mandatory
+   "bookingDate": "2026-06-21",       // string(yyyy-mm-dd,eg:2026-06-20) // Mandatory
+   "sourceId": 1,                     // (direct) // Mandatory
+   "subSourceId": 1,                  // (unified number) // Mandatory
+    "starttime": “09:00:00”,          // (HH:mm:ss, 24 hour format) // Mandatory
    "firstName": "Kirubaharan",
    "lastName": "Palani",
-   "sendTestDriveConfirmation": true,
-   "communicationType": 0,            // (1->sms,3->whatsapp)
+   "sendTestDriveConfirmation": true, // Mandatory
+   "communicationType": 0,            // (1->sms,3->whatsapp) // Mandatory
    "remarks": "",
-   "phoneCodeId": 1,                  // (default:1)
-   "phoneNumber": 551883151,          // (eg:5XXXXXXXX)
-   "countryId": 56,                   // (listId-56)
+   "phoneCodeId": 1,                  // (default:1) // Mandatory
+   "phoneNumber": 551883151,          // (eg:5XXXXXXXX) // Mandatory
+   "countryId": 56,                   // (listId-56) // Mandatory
    "regionId": 0,                     // optional (listId-100)
    "cityId": 0,                       // optional (listId-101)
    "email": "pkiruba85@gmail.com"     // optional (default:empty)

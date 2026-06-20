@@ -15,14 +15,14 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ### Query Parameters
 
 ```
-companyId: integer (default:1)
-brandId: integer (listId:2)
-businessAreaId: integer (default:2)
-branchId: integer (optional) (/v1/core/branchlist -> branchId)
-vehicleId: long 
-fromDate: string (yyyy-mm-dd,eg:2026-06-20 , fromDate and toDate should be 7 days range)
-toDate: string (yyyy-mm-dd,eg:2026-06-20)
-lang: string (default: en)
+companyId: integer (default:1)// Mandatory
+brandId: integer (listId:2)// Mandatory
+businessAreaId: integer (default:2)// Mandatory
+branchId: integer (optional) (/v1/core/branchlist -> branchId) // Mandatory
+vehicleId: long  // Mandatory
+fromDate: string (yyyy-mm-dd,eg:2026-06-20 , fromDate and toDate should be 7 days range) // Mandatory
+toDate: string (yyyy-mm-dd,eg:2026-06-20) // Mandatory
+lang: string (default: en)// Mandatory
 ```
 
 !!! note

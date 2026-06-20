@@ -15,13 +15,13 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ### Query Parameters
 
 ```
-companyId: integer
-brandId: integer
-businessAreaId: integer
+companyId: integer // Mandatory
+brandId: integer // Mandatory
+businessAreaId: integer // Mandatory
 regionId: integer (optional)
 cityId: integer (optional)
 branchId: integer (optional)
-lang: string (Default: en)
+lang: string (Default: en) // Mandatory
 ```
 
 !!! note

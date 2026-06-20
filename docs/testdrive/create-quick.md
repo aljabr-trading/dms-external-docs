@@ -24,25 +24,26 @@ sample data with reference of master list mapping
 
 ```json
 {
-  "companyId": 1,                       // default(1)
-  "brandId": 0,                         // (listId:2)
-  "branchId": 0,                        // (/v1/core/branchlist -> branchId)
-  "businessAreaId": 2,                  // default(2)
-  "sourceId": 1,                        // (direct)
-  "subSourceId": 1,                     // (unified number)
+  "companyId": 1,                       // default(1)// Mandatory
+  "brandId": 0,                         // (listId:2)// Mandatory
+  "branchId": 0,                        // (/v1/core/branchlist -> branchId)// Mandatory
+  "businessAreaId": 2,                  // default(2)// Mandatory
+  "sourceId": 1,                        // default(1)(direct)// Mandatory
+  "subSourceId": 1,                     // default(1)(unified number)// Mandatory
   "bookType": 1,                        // (1-Morning,2-Evening)
-  "bookingDate": "2026-06-19",
-  "sendTestDriveConfirmation": true,
-  "communicationType": 1,               // (1-Sms,3-WhatsApp)
+  "bookingDate": "2026-06-19",          // Mandatory
+  "sendTestDriveConfirmation": true,    // Mandatory
+  "communicationType": 1,               // (1-Sms,3-WhatsApp) // Mandatory
   "remarks": "string",                  // (optional)
-  "firstName": "",
-  "lastName": "",
-  "phoneCodeId": 1,                     // (default:1)
-  "phoneNumber": 568617083,             // (format:5XXXXXXXX)
+  "firstName": "",                      // Mandatory
+  "lastName": "",                       // Mandatory
+  "phoneCodeId": 1,                     // (default:1) // Mandatory
+  "phoneNumber": 568617083,             // (format:5XXXXXXXX) // Mandatory
   "countryId": 56,                      // (listId-56)
   "regionId": 0,                        // optional (listId-100)
   "cityId": 0,                          // optional (listId-101)
   "email": "string",
+                                        // Mandatory
   "modelFamilies": [
     {
       "modelFamilyId": 12               // (branch-vehicle-stock-list -> modelFamilyId)
