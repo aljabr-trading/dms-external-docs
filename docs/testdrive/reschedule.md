@@ -10,7 +10,7 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-<a><span class="http-put">PUT</span></a> `/v1/testdrive/reschedule`
+<a><span class="http-post">POST</span></a> `/v1/testdrive/reschedule`
 
 ---
 
@@ -20,18 +20,27 @@ Refer the comment <span class="flag-required"> //Mandatory</span> means the prop
 
 sample data with reference of master list mapping
 
-#### Request Mapping
+#### Request Request (By Slot)
 
 ```json
 {
-  "requestMasterId": 2729,                          // Mandatory
-  "aptVehicleId": 211,                              // Mandatory
-  "slotMasterId": 19,                               // Mandatory
-  "reBookingDate": "2026-06-19T10:08:08.660Z"       // Mandatory
+  "requestMasterId": 2729,                  // Mandatory
+  "aptVehicleId": 211,                      // Mandatory
+  "slotMasterId": 19,                       // Mandatory
+  "reBookingDate": "2026-06-19"             // Mandatory
 }
 ```
 
-#### Request Body <span class="flag-required"></span>
+#### Request Request (By Period)
+
+```json
+{
+  "requestMasterId": 2729,                  // Mandatory
+  "aptVehicleId": 211,                      // Mandatory
+  "reBookingDate": "2026-06-19",            // Mandatory
+  "startTime": "15:30:30"                   // Mandatory (HH:mm:ss)
+}
+```
 
 #### Response
 

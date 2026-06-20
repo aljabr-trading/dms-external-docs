@@ -22,28 +22,57 @@ sample data with reference of master list mapping
 
 #### Request Mapping
 
+#### Request Body (Using Slot Type)
+
 ```json
 {
-  "companyId": 1,                               // Mandatory
-  "brandId": 1,                                 // Mandatory
-  "businessAreaId": 2,                          // Mandatory
-  "branchId": 10,                               // Mandatory
-  "aptVehicleId": 211,                          // Mandatory
-  "bookingDate": "2026-06-18T07:45:31.784Z",    // Mandatory
-  "slotMasterId": 19,                           // Mandatory
-  "firstName": "string",                        // Mandatory
-  "lastName": "string",                         // Mandatory
-  "sourceId": 0,
-  "subSourceId": 0,
-  "sendTestDriveConfirmation": true,
-  "communicationType": 0,
-  "remarks": "string",
-  "phoneCodeId": 0,
-  "phoneNumber": 0,
-  "countryId": 0,
-  "regionId": 0,
-  "cityId": 0,
-  "email": "string"
+   "companyId": 1,                    // (default: 1)
+   "brandId": 1,                      // (listId: 2)
+   "businessAreaId": 2,               // (default: 2)
+   "branchId": 10,                    // (/v1/core/branchlist -> branchId)
+   "aptVehicleId": 212,               // (branch-vehicle-slot-list -> aptVehicleId)
+   "bookingDate": "2026-06-21",       // string (yyyy-mm-dd, eg: 2026-06-21)
+   "slotMasterId": 31,                // (branch-vehicle-slot-list -> slotMasterId)
+   "sourceId": 1,                     // (direct)
+   "subSourceId": 1,                  // (unified number)
+   "firstName": "Kirubaharan",
+   "lastName": "Palani",
+   "sendTestDriveConfirmation": true,
+   "communicationType": 0,            // (1->sms, 3->whatsapp)
+   "remarks": "",
+   "phoneCodeId": 1,                  // (default:1)
+   "phoneNumber": 551883151,          // (eg:5XXXXXXXX)
+   "countryId": 56,                   // (listId: 56)
+   "regionId": 0,                     // optional (listId: 100)
+   "cityId": 0,                       // optional (listId: 101)
+   "email": "pkiruba85@gmail.com"     // optional (default: empty)
+}
+```
+
+#### Request Body (Using Period)
+
+```json
+{
+   "companyId": 1,                    // (default: 1)
+   "brandId": 1,                      // (listId: 2)
+   "businessAreaId": 2,               // (default: 2)
+   "branchId": 10,                    // (/v1/core/branchlist -> branchId)
+   "aptVehicleId": 212,               // (branch-vehicle-slot-list- aptVehicleId)
+   "bookingDate": "2026-06-21",       // string(yyyy-mm-dd,eg:2026-06-20)
+   "sourceId": 1,                     // (direct)
+   "subSourceId": 1,                  // (unified number)
+    "starttime": “09:00:00”,          // (HH:mm:ss, 24 hour format)
+   "firstName": "Kirubaharan",
+   "lastName": "Palani",
+   "sendTestDriveConfirmation": true,
+   "communicationType": 0,            // (1->sms,3->whatsapp)
+   "remarks": "",
+   "phoneCodeId": 1,                  // (default:1)
+   "phoneNumber": 551883151,          // (eg:5XXXXXXXX)
+   "countryId": 56,                   // (listId-56)
+   "regionId": 0,                     // optional (listId-100)
+   "cityId": 0,                       // optional (listId-101)
+   "email": "pkiruba85@gmail.com"     // optional (default:empty)
 }
 ```
 

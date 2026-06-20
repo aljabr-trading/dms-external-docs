@@ -25,6 +25,7 @@ sample data with reference of master list mapping
 ```json
 {
   "requestMasterId": 2729 // Mandatory
+  "remarks": "string"     // Optional
 }
 ```
 

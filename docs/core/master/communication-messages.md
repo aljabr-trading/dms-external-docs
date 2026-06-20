@@ -17,7 +17,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ### Query Parameters
 
 ```
-companyId: integer
+companyId: integer ( default :1) master -> masterlist -> listId=1
 lang: string (default "en") "en" | "ar"
 ```
 

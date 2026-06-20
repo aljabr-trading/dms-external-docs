@@ -24,29 +24,33 @@ sample data with reference of master list mapping
 
 ```json
 {
-  "companyId": 1,                               // Mandatory
-  "brandId": 1,                                 // Mandatory
-  "businessAreaId": 2,                          // Mandatory
-  "branchId": 10,                               // Mandatory
-  "bookingDate": "2026-06-18T10:01:20.032Z",    // Mandatory
-  "firstName": "string",                        // Mandatory
-  "lastName": "string",                         // Mandatory
-  "modelFamilies": [                            // Mandatory
-    {
-      "modelFamilyId": 0
-    }
-  ],
-  "sourceId": 0,
-  "subSourceId": 0,
+  "companyId": 1,                       // default(1)
+  "brandId": 0,                         // (listId:2)
+  "branchId": 0,                        // (/v1/core/branchlist -> branchId)
+  "businessAreaId": 2,                  // default(2)
+  "sourceId": 1,                        // (direct)
+  "subSourceId": 1,                     // (unified number)
+  "bookType": 1,                        // (1-Morning,2-Evening)
+  "bookingDate": "2026-06-19",
   "sendTestDriveConfirmation": true,
-  "communicationType": 0,
-  "remarks": "string",
-  "phoneCodeId": 0,
-  "phoneNumber": 0,
-  "countryId": 0,
-  "regionId": 0,
-  "cityId": 0,
-  "email": "string"
+  "communicationType": 1,               // (1-Sms,3-WhatsApp)
+  "remarks": "string",                  // (optional)
+  "firstName": "",
+  "lastName": "",
+  "phoneCodeId": 1,                     // (default:1)
+  "phoneNumber": 568617083,             // (format:5XXXXXXXX)
+  "countryId": 56,                      // (listId-56)
+  "regionId": 0,                        // optional (listId-100)
+  "cityId": 0,                          // optional (listId-101)
+  "email": "string",
+  "modelFamilies": [
+    {
+      "modelFamilyId": 12               // (branch-vehicle-stock-list -> modelFamilyId)
+    },
+    {
+      "modelFamilyId": 13               // (branch-vehicle-stock-list -> modelFamilyId)
+    }
+  ]
 }
 ```
 
