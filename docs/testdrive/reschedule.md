@@ -20,7 +20,7 @@ Refer the comment <span class="flag-required"> //Mandatory</span> means the prop
 
 sample data with reference of master list mapping
 
-#### Request Request (By Slot)
+#### Request Body (Using Slot Type)
 
 ```json
 {
@@ -31,7 +31,7 @@ sample data with reference of master list mapping
 }
 ```
 
-#### Request Request (By Period)
+#### Request Body (Using Period)
 
 ```json
 {
