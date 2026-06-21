@@ -15,17 +15,17 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ### Query Parameters
 
 ```
-companyId: integer (default: 1) // Mandatory
-brandId: integer (listId: 2) // Mandatory
-businessAreaId: integer (default: 2)// Mandatory
-branchId: integer (optional)(/v1/core/branchlist -> branchId)
-isOpen: boolean (optional) (empty:all,true:open,false:closed)
-contactNo: string (contact number: eg:5686017083,format:5XXXXXXXX)
-requestNo: string (any text)
-customerIdentificationNo: string (any text)
-pageNumber: integer (default:1)// Mandatory
-pageSize: integer (default:10)// Mandatory
-lang: string (default: en)// Mandatory
+companyId: integer                      // Mandatory (default: 1)
+brandId: integer                        // Mandatory (listId: 2) 
+businessAreaId: integer                 // Mandatory (default: 2)
+branchId: integer                       // (optional) (/v1/core/branchlist -> branchId)
+isOpen: boolean                         // (optional) (empty:all,true:open,false:closed)
+contactNo: string                       // (contact number: eg:5686017083,format:5XXXXXXXX)
+requestNo: string                       // (any text)
+customerIdentificationNo: string        // (any text)
+pageNumber: integer                     // Mandatory (default:1)
+pageSize: integer                       // Mandatory (default:10)
+lang: string                            // Mandatory (default: en) "en" | "ar"
 ```
 
 !!! note

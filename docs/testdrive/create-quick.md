@@ -24,24 +24,24 @@ sample data with reference of master list mapping
 
 ```json
 {
-  "companyId": 1,                       // default(1)// Mandatory
-  "brandId": 0,                         // (listId:2)// Mandatory
-  "branchId": 0,                        // (/v1/core/branchlist -> branchId)// Mandatory
-  "businessAreaId": 2,                  // default(2)// Mandatory
-  "sourceId": 1,                        // default(1)(direct)// Mandatory
-  "subSourceId": 1,                     // default(1)(unified number)// Mandatory
-  "bookType": 1,                        // (1-Morning,2-Evening)
+  "companyId": 1,                       // Mandatory (default: 1)
+  "brandId": 0,                         // Mandatory (listId: 2)
+  "branchId": 0,                        // Mandatory (/v1/core/branchlist -> branchId)
+  "businessAreaId": 2,                  // Mandatory (default: 2)
+  "sourceId": 1,                        // Mandatory (default: 1) -> direct
+  "subSourceId": 1,                     // Mandatory (default: 1) -> unified number
+  "bookType": 1,                        // (1-Morning, 2-Evening)
   "bookingDate": "2026-06-19",          // Mandatory
   "sendTestDriveConfirmation": true,    // Mandatory
-  "communicationType": 1,               // (1-Sms,3-WhatsApp) // Mandatory
+  "communicationType": 1,               // Mandatory (1-Sms, 3-WhatsApp) 
   "remarks": "string",                  // (optional)
   "firstName": "",                      // Mandatory
   "lastName": "",                       // Mandatory
-  "phoneCodeId": 1,                     // (default:1) // Mandatory
-  "phoneNumber": 568617083,             // (format:5XXXXXXXX) // Mandatory
-  "countryId": 56,                      // (listId-56)
-  "regionId": 0,                        // optional (listId-100)
-  "cityId": 0,                          // optional (listId-101)
+  "phoneCodeId": 1,                     // Mandatory (default: 1) 
+  "phoneNumber": 568617083,             // Mandatory (format: 5XXXXXXXX) 
+  "countryId": 56,                      // (listId: 56)
+  "regionId": 0,                        // optional (listId: 100)
+  "cityId": 0,                          // optional (listId: 101)
   "email": "string",
                                         // Mandatory
   "modelFamilies": [
