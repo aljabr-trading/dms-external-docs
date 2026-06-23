@@ -76,6 +76,9 @@ sample data with reference of master list mapping
       "acceptNewsLetter": true, (boolean eg : true)
       "acceptMarketing": true, (boolean eg : true)
       "acceptPrivatePolicy": true, (boolean eg : true)
+      "sendCommunicationConfirmation": true, (boolean eg : true)
+      "communicationType": 1  (1->sms, 3->whatsapp)
+      "lang": "en"
     }
   ],
   "isProcessed": 1
@@ -204,7 +207,10 @@ Below are the possible values for creating lead and properties will be mandatory
       "testDriveRequired": true,                                  // Mandatory
       "acceptNewsLetter": true,                                   // Mandatory
       "acceptMarketing": true,                                    // Mandatory
-      "acceptPrivatePolicy": true                                 // Mandatory
+      "acceptPrivatePolicy": true,                                 // Mandatory
+      "sendCommunicationConfirmation": true,                      // Optional
+      "communicationType": 1,                                     // Optional
+      "lang": "en"                                                // Optional
     }
   ],
   "isProcessed": 1
@@ -269,7 +275,10 @@ Below are the possible values for creating lead and properties will be mandatory
       "testDriveRequired": true,                                  // Mandatory
       "acceptNewsLetter": true,                                   // Mandatory
       "acceptMarketing": true,                                    // Mandatory
-      "acceptPrivatePolicy": true                                 // Mandatory
+      "acceptPrivatePolicy": true,                                // Mandatory
+      "sendCommunicationConfirmation": true,                      // Optional
+      "communicationType": 1,                                     // Optional
+      "lang": "en"                                                // Optional
     }
   ],
   "isProcessed": 1

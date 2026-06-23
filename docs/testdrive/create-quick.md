@@ -43,6 +43,9 @@ sample data with reference of master list mapping
   "regionId": 0,                        // optional (listId: 100)
   "cityId": 0,                          // optional (listId: 101)
   "email": "string",
+  "sendTestDriveConfirmation": true,    // Mandatory
+  "communicationType": 1,               // Mandatory Mandatory (1->sms, 3->whatsapp)
+  "lang":"en",                          // Mandatory
                                         // Mandatory
   "modelFamilies": [
     {
@@ -62,6 +65,11 @@ sample data with reference of master list mapping
 ```json
 {
   "success": true,
-  "requestMasterId": 2730
+  "requestMasterId": 2730 ,
+  "requestNo": "TD2770",
+  "communication": "SMS",
+  "communicatioSent": true,
+  "communicatioMessage": "Dear Customer,\nYour test drive (TD2770) for  has been submitted, our representative will call you for confirming the appointment.\n \nFor assistance, contact:\nCall Center: 920014200\n\nBranch: Dammam - Khobar Highway\nLocation: https://maps.app.goo.gl/cdJ6reAkeERUKh7w6\n\nThank you for choosing KIA.",
+  "communicationId": 179329
 }
 ```

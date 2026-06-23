@@ -19,7 +19,8 @@ companyId: integer                            // Mandatory (default:1)
 brandId: integer                              // Mandatory (listId:2)
 businessAreaId: integer                       // Mandatory (default:2)
 branchId: integer                             // Mandatory (/v1/core/branchlist -> branchId) 
-vehicleId: long                               // Mandatory
+modelFamilyId: long                           // Either modelFamilyId or vehicleId is required
+vehicleId: long                               // Either modelFamilyId or vehicleId is required
 fromDate: string                              // Mandatory (yyyy-mm-dd,eg:2026-06-20 , fromDate and toDate should be 7 days range) 
 toDate: string                                // Mandatory (yyyy-mm-dd,eg:2026-06-20) 
 lang: string                                  // Mandatory (default: en) "en" | "ar"
@@ -33,6 +34,7 @@ lang: string                                  // Mandatory (default: en) "en" | 
     - **brandId:** `1`
     - **businessAreaId:** `2`
     - **branchId:** `10`
+    - **modelFamilyId:** `18`
     - **vehicleId:** `211`
     - **fromDate:** `2026-06-19`
     - **toDate:** `2026-06-21`

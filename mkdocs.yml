@@ -26,6 +26,8 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Communication:
+      - Communication List: communication/communication.md
   - Core:
       - Master:
         - Master List (Reference): core/master/masterlist.md

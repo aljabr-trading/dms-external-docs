@@ -45,7 +45,10 @@ sample data with reference of master list mapping
    "countryId": 56,                   // Mandatory (listId: 56) 
    "regionId": 0,                     // Optional (listId: 100)
    "cityId": 0,                       // Optional (listId: 101)
-   "email": "test@gmail.com"          // Optional (default: empty)
+   "email": "test@gmail.com",          // Optional (default: empty)
+   "sendTestDriveConfirmation": true, // Mandatory
+   "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
+   "lang":"en"                        // Mandatory
 }
 ```
 
@@ -64,15 +67,16 @@ sample data with reference of master list mapping
    "starttime": “09:00:00”,           // (HH:mm:ss, 24 hour format) // Mandatory
    "firstName": "Kirubaharan",        // Mandatory
    "lastName": "Palani",              // Mandatory 
-   "sendTestDriveConfirmation": true, // Mandatory
-   "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
    "remarks": "",                     // Optional
    "phoneCodeId": 1,                  // Mandatory (default:1) 
    "phoneNumber": 551883151,          // Mandatory (eg:5XXXXXXXX) 
    "countryId": 56,                   // Mandatory (listId: 56) 
    "regionId": 0,                     // Optional (listId: 100)
    "cityId": 0,                       // Optional (listId: 101)
-   "email": "test@gmail.com"          // Optional (default: empty)
+   "email": "test@gmail.com",         // Optional (default: empty)
+   "sendTestDriveConfirmation": true, // Mandatory
+   "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
+   "lang":"en"                        // Mandatory
 }
 ```
 
@@ -83,6 +87,11 @@ sample data with reference of master list mapping
 ```json
 {
   "success": true,
-  "requestMasterId": 2729
+  "requestMasterId": 2729,
+  "requestNo": "TD2772",
+  "communication": "SMS",
+  "communicatioSent": true,
+  "communicatioMessage": "Dear Customer,\nYour test drive (TD2772) for Carnival has been confirmed on 24-06-2026 at 04:30 PM - 04:50 PM.\n\nBranch: Dammam - Khobar Highway\nCall Center: 920014200\nLocation: https://maps.app.goo.gl/cdJ6reAkeERUKh7w6\n\nThank you for choosing KIA.",
+  "communicationId": 179331
 }
 ```
