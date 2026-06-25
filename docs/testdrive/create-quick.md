@@ -32,8 +32,6 @@ sample data with reference of master list mapping
   "subSourceId": 1,                     // Mandatory (default: 1) -> unified number
   "bookType": 1,                        // (1-Morning, 2-Evening)
   "bookingDate": "2026-06-19",          // Mandatory
-  "sendTestDriveConfirmation": true,    // Mandatory
-  "communicationType": 1,               // Mandatory (1-Sms, 3-WhatsApp) 
   "remarks": "string",                  // (optional)
   "firstName": "",                      // Mandatory
   "lastName": "",                       // Mandatory
@@ -43,7 +41,7 @@ sample data with reference of master list mapping
   "regionId": 0,                        // optional (listId: 100)
   "cityId": 0,                          // optional (listId: 101)
   "email": "string",
-  "sendTestDriveConfirmation": true,    // Mandatory
+  "sendCommunicationConfirmation": true,    // Mandatory
   "communicationType": 1,               // Mandatory Mandatory (1->sms, 3->whatsapp)
   "lang":"en",                          // Mandatory
                                         // Mandatory
@@ -67,9 +65,9 @@ sample data with reference of master list mapping
   "success": true,
   "requestMasterId": 2730 ,
   "requestNo": "TD2770",
-  "communication": "SMS",
-  "communicatioSent": true,
-  "communicatioMessage": "Dear Customer,\nYour test drive (TD2770) for  has been submitted, our representative will call you for confirming the appointment.\n \nFor assistance, contact:\nCall Center: 920014200\n\nBranch: Dammam - Khobar Highway\nLocation: https://maps.app.goo.gl/cdJ6reAkeERUKh7w6\n\nThank you for choosing KIA.",
-  "communicationId": 179329
+  "sendCommunicationConfirmation": true,
+    "communicationType": 1,
+    "communicationMessage": "Dear Customer, Your test drive (TD2777) for Carnival has been confirmed on 28-06-2026 at 06:00 PM - 06:20 PM. Branch: Dammam - Khobar Highway Call Center: 920014200 Location: https://maps.app.goo.gl/cdJ6reAkeERUKh7w6 Thank you for choosing KIA .",
+    "communicationId": 179372
 }
 ```

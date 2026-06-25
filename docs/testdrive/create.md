@@ -37,8 +37,6 @@ sample data with reference of master list mapping
    "subSourceId": 1,                  // Mandatory (default: 1) -> unified number
    "firstName": "Kirubaharan",        // Mandatory
    "lastName": "Palani",              // Mandatory 
-   "sendTestDriveConfirmation": true, // Mandatory
-   "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
    "remarks": "",                     // Optional
    "phoneCodeId": 1,                  // Mandatory (default:1) 
    "phoneNumber": 551883151,          // Mandatory (eg:5XXXXXXXX) 
@@ -46,9 +44,10 @@ sample data with reference of master list mapping
    "regionId": 0,                     // Optional (listId: 100)
    "cityId": 0,                       // Optional (listId: 101)
    "email": "test@gmail.com",          // Optional (default: empty)
-   "sendTestDriveConfirmation": true, // Mandatory
-   "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
    "lang":"en"                        // Mandatory
+   "sendCommunicationConfirmation": false,// Mandatory
+  "communicationType": 1,                 // Mandatory (1->sms, 3->whatsapp)
+   "remarks": "string" 
 }
 ```
 
