@@ -26,26 +26,26 @@ sample data with reference of master list mapping
 
 ```json
 {
-   "companyId": 1,                    // Mandatory (default: 1) 
-   "brandId": 1,                      // Mandatory (listId: 2) 
-   "businessAreaId": 2,               // Mandatory (default: 2) 
-   "branchId": 10,                    // Mandatory (/v1/core/branchlist -> branchId) 
-   "aptVehicleId": 212,               // Mandatory (branch-vehicle-slot-list -> aptVehicleId) 
-   "bookingDate": "2026-06-21",       // Mandatory (yyyy-mm-dd, eg: 2026-06-21) 
-   "slotMasterId": 31,                // Mandatory (branch-vehicle-slot-list -> slotMasterId) 
-   "sourceId": 1,                     // Mandatory (default: 1) -> direct
-   "subSourceId": 1,                  // Mandatory (default: 1) -> unified number
-   "firstName": "Kirubaharan",        // Mandatory
-   "lastName": "Palani",              // Mandatory 
-   "remarks": "",                     // Optional
-   "phoneCodeId": 1,                  // Mandatory (default:1) 
-   "phoneNumber": 551883151,          // Mandatory (eg:5XXXXXXXX) 
-   "countryId": 56,                   // Mandatory (listId: 56) 
-   "regionId": 0,                     // Optional (listId: 100)
-   "cityId": 0,                       // Optional (listId: 101)
-   "email": "test@gmail.com",          // Optional (default: empty)
-   "lang":"en"                        // Mandatory
-   "sendCommunicationConfirmation": false,// Mandatory
+   "companyId": 1,                        // Mandatory (default: 1) 
+   "brandId": 1,                          // Mandatory (listId: 2) 
+   "businessAreaId": 2,                   // Mandatory (default: 2) 
+   "branchId": 10,                        // Mandatory (/v1/core/branchlist -> branchId) 
+   "aptVehicleId": 212,                   // Mandatory (branch-vehicle-slot-list -> aptVehicleId) 
+   "bookingDate": "2026-06-21",           // Mandatory (yyyy-mm-dd, eg: 2026-06-21) 
+   "slotMasterId": 31,                    // Mandatory (branch-vehicle-slot-list -> slotMasterId) 
+   "sourceId": 1,                         // Mandatory (default: 1) -> direct
+   "subSourceId": 1,                      // Mandatory (default: 1) -> unified number
+   "firstName": "Kirubaharan",            // Mandatory
+   "lastName": "Palani",                  // Mandatory 
+   "remarks": "",                         // Optional
+   "phoneCodeId": 1,                      // Mandatory (default:1) 
+   "phoneNumber": 551883151,              // Mandatory (eg:5XXXXXXXX) 
+   "countryId": 56,                       // Mandatory (listId: 56) 
+   "regionId": 0,                         // Optional (listId: 100)
+   "cityId": 0,                           // Optional (listId: 101)
+   "email": "test@gmail.com",             // Optional (default: empty)
+   "lang":"en"                            // Mandatory
+   "sendCommunicationConfirmation": true, // Mandatory
   "communicationType": 1,                 // Mandatory (1->sms, 3->whatsapp)
    "remarks": "string" 
 }
@@ -73,7 +73,7 @@ sample data with reference of master list mapping
    "regionId": 0,                     // Optional (listId: 100)
    "cityId": 0,                       // Optional (listId: 101)
    "email": "test@gmail.com",         // Optional (default: empty)
-   "sendTestDriveConfirmation": true, // Mandatory
+   "sendCommunicationConfirmation": true, // Mandatory
    "communicationType": 0,            // Mandatory (1->sms, 3->whatsapp)
    "lang":"en"                        // Mandatory
 }
