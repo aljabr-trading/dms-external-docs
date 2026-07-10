@@ -35,6 +35,7 @@ nav:
         - Communication Messages: core/master/communication-messages.md
         - Branch List: core/master/branchlist.md
       - Customer: core/customer.md
+      - Knowledge Base: core/knowledge-base.md
   - Lead:
       - Master List: lead/master-list.md
       - Create Leads: lead/create-leads.md
