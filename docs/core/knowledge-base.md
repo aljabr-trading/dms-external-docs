@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Knowledge Base   
+## Get knowledge base feed
+### Returns active knowledge base articles for the requested company, brand, and language. Optional filters: ouId, businessAreaId, categoryId, modifiedSince.
+
 <span class="http-get">GET</span> `/v1/core/knowledge-base`
 
 Get knowledge base feed

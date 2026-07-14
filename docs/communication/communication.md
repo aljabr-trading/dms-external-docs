@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## send communication
+## Send templated communication
+### Sends an SMS using a message template resolved from the supplied action type and reference information.
+
 <span class="http-get">GET</span> `/v1/communications/sendcommunication`
 
 Action Type 

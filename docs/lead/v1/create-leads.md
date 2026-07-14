@@ -9,6 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Create and process lead bulk directly
+### Creates a lead bulk import with up to 20 leads and returns the processed bulk details.
+
 <a><span class="http-post">POST</span></a> `/v1/leads/bulks-direct`
 
 ---

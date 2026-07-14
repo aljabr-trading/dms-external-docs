@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Branch list (with language specific)
+## Get core branch list
+### Returns branches filtered by brand, department, region, city, branch, and language.
+
 <span class="http-get">GET</span> `/v1/core/branchlist`
 
 ### Query Parameters

@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Master list based on lookup types (with language specific)
+## Get localized core lookup list values
+### Returns localized core lookup values, optionally filtered by list and parent ids.
+
 <span class="http-get">GET</span> `/v1/core/list`
 
 ### Query Parameters

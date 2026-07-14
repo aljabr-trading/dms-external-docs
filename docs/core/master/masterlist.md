@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Master List (for reference)
+## Get core master lookup lists
+### Returns all localized master lookup list definitions used by external integrations.
+
 <span class="http-get">GET</span> `/v1/core/masterlist`
 
 ### Query Parameters

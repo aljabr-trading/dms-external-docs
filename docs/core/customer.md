@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Customer   
+## Search Customers
+### Returns customers for a valid company code filtered by customer id, identification number, mobile number, or reference number.
+
 <span class="http-get">GET</span> `/v1/core/customer`
 
 ### Query Parameters

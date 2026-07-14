@@ -10,7 +10,8 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Communication Messages
+## Get communication messages
+### Returns active communication message templates for the requested company and language.
 
 <span class="http-get">GET</span> `/v1/core/communication-messages`
 

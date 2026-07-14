@@ -37,9 +37,14 @@ nav:
       - Customer: core/customer.md
       - Knowledge Base: core/knowledge-base.md
   - Lead:
-      - Master List: lead/master-list.md
-      - Create Leads: lead/create-leads.md
-      - Get Leads: lead/get-leads.md
+      - Version 1:
+        - Master List: lead/v1/master-list.md
+        - Create Leads (Bulk): lead/v1/create-leads.md
+        - Get Leads: lead/v1/get-leads.md
+      - Version 2:
+        - Master List: lead/v2/master-list.md
+        - Create Leads (Single): lead/v2/create-leads.md
+        - Duplicate Lead: lead/v2/duplicate-lead-validate.md
   - Marketing:
       - Campaign: marketing/get-campaigns.md
   - Vehicle Details:
