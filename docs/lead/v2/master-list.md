@@ -9,7 +9,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
-## Master list based on lookup types (with language specific)
+## Get localized lead lookup list values
+### Returns localized lookup values used by lead integrations, optionally filtered by list and parent ids.
+
 <span class="http-get">GET</span> `/v2/leads/list`
 
 ### Query Parameters
@@ -50,7 +52,9 @@ This will provide the master list based on the language provided, default is en
 ]
 ```
 
-## Branch list (with language specific)
+## Get localized branch list
+### Returns branches filtered by brand, department, region, city, branch, and language.
+
 <span class="http-get">GET</span> `/v2/leads/branchlist`
 
 ### Query Parameters

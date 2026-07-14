@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get test drive vehicle slots
+### Returns slot availability for a selected test drive vehicle at a branch for the requested date range.
+
 <span class="http-get">GET</span> `/v1/testdrive/branch-vehicle-slot-list`
 
 ### Query Parameters

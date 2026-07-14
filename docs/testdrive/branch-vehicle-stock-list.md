@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get testdrive vehicle stock
+### Returns test drive vehicles available at a branch for the requested date range. The date range must start today or later and cannot exceed seven days.
+
 <span class="http-get">GET</span> `/v1/testdrive/branch-vehicle-stock-list`
 
 ### Query Parameters

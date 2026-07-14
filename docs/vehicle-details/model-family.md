@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get model families
+### Returns model families available for the requested company, brand, business area, and language.
+
 <span class="http-get">GET</span> `/v1/vehicle-details/model-family`
 
 ### Query Parameters

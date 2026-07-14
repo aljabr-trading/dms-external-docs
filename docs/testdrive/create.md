@@ -9,6 +9,8 @@ Base URL
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
+## Create testdrive booking
+### Creates a test drive booking for a selected branch vehicle and either slot or period start time.
 
 <a><span class="http-post">POST</span></a> `/v1/testdrive/create`
 

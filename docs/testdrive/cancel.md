@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Cancel testdrive booking
+### Cancels an existing test drive booking by request master id.
+
 <a><span class="http-post">POST</span></a> `/v1/testdrive/cancel`
 
 ---

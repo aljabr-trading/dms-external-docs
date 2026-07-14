@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Search test drive bookings
+### Returns test drive bookings for the supplied filters. At least one of contact number, request number, or customer identification number is required.
+
 <span class="http-get">GET</span> `/v1/testdrive/bookings`
 
 ### Query Parameters

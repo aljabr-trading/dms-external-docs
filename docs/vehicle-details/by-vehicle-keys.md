@@ -10,6 +10,10 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get vehicle details by vehicle keys
+### Returns a localized vehicle specification sheet by model family, variant code, model year, company, brand, business area, and language.
+
+
 <span class="http-get">GET</span> `/v1/vehicle-details/by-vehicle-keys`
 
 ### Query Parameters

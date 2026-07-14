@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get branch testdrive model families
+### Returns distinct active model families for test drive vehicles currently mapped to the branch.
+
 <span class="http-get">GET</span> `/v1/testdrive/branch-model-family-list`
 
 ### Query Parameters

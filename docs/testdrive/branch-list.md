@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Get testdrive branch list
+### Returns test drive enabled branches filtered by company, brand, business area, region, city, branch, and language.
+
 <span class="http-get">GET</span> `/v1/testdrive/branch-list`
 
 ### Query Parameters

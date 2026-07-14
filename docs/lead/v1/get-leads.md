@@ -8,6 +8,10 @@ Base URL
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
+
+## Search lead bulk imports
+### Returns lead bulk import headers filtered by header id, date range, source, sub-source, or lead id. Date range searches are limited to seven days.
+
 <a><span class="http-get">GET</span></a> `/v1/leads/bulks`
 
 ### Query Parameters

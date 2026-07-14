@@ -8,6 +8,10 @@ Base URL
 PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
+
+## Get Campaign details
+### Returns campaign details filtered by the supplied campaign search request.
+
 <a><span class="http-get">GET</span></a> `/v1/marketing/campaign/details`
 
 ### Query Parameters

@@ -10,6 +10,9 @@ PROD: https://dms-gs.jtc.aljabr.com.sa/gs
 TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 
+## Reschedule testdrive booking
+### Reschedules an existing test drive booking to a new date, vehicle, and slot or start time.
+
 <a><span class="http-post">POST</span></a> `/v1/testdrive/reschedule`
 
 ---
