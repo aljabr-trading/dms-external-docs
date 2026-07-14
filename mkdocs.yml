@@ -28,6 +28,7 @@ nav:
   - Home: index.md
   - Communication:
       - Communication List: communication/communication.md
+      - Location Inquiry: communication\location-inquiry.md
   - Core:
       - Master:
         - Master List (Reference): core/master/masterlist.md
@@ -55,6 +56,7 @@ nav:
       - Bookings: testdrive/bookings.md
       - Branch List: testdrive/branch-list.md
       - Vehicle Stock List: testdrive/branch-vehicle-stock-list.md
+      - Model Family List: testdrive\branch-model-family-list.md
       - Vehicle Slot List: testdrive/branch-vehicle-slot-list.md
       - Create: testdrive/create.md
       - Quick Create: testdrive/create-quick.md
