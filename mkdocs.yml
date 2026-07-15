@@ -42,6 +42,7 @@ nav:
         - Master List: lead/v1/master-list.md
         - Create Leads (Bulk): lead/v1/create-leads.md
         - Get Leads: lead/v1/get-leads.md
+        - Prospect Leads: lead/v1/prospect-leads.md
       - Version 2:
         - Master List: lead/v2/master-list.md
         - Create Leads (Single): lead/v2/create-leads.md

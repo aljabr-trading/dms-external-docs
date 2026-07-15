@@ -22,13 +22,14 @@ companyId: integer                      // Mandatory (default: 1)
 brandId: integer                        // Mandatory (listId: 2) 
 businessAreaId: integer                 // Mandatory (default: 2)
 branchId: integer                       // (optional) (/v1/core/branchlist -> branchId)
-isOpen: boolean                         // (optional) (empty:all,true:open,false:closed)
+isOpen: boolean                         // (optional) (empty:all, true:open, false:closed)
+isFutureOnly: boolean                   // (optional) (empty or false:all, true:considers only future date and time)
 contactNo: string                       // (contact number: eg:5686017083,format:5XXXXXXXX)
 requestNo: string                       // (any text)
 customerIdentificationNo: string        // (any text)
 pageNumber: integer                     // Mandatory (default:1)
 pageSize: integer                       // Mandatory (default:10)
-lang: string                            // Mandatory (default: en) "en" | "ar"
+lang: string                            // optional (default: en) "en" | "ar"
 ```
 
 !!! note
