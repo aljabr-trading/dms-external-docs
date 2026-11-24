@@ -57,9 +57,28 @@ nav:
       - Bookings: testdrive/bookings.md
       - Branch List: testdrive/branch-list.md
       - Vehicle Stock List: testdrive/branch-vehicle-stock-list.md
-      - Model Family List: testdrive\branch-model-family-list.md
+      - Model Family List: testdrive/branch-model-family-list.md
       - Vehicle Slot List: testdrive/branch-vehicle-slot-list.md
       - Create: testdrive/create.md
       - Quick Create: testdrive/create-quick.md
       - Cancel: testdrive/cancel.md
       - Reschedule: testdrive/reschedule.md
+  - Service Appointment:
+      - Bookings: service-apt/bookings.md
+      - Create Booking: service-apt/booking.md
+      - Branch List: service-apt/branch-list.md
+      - Category: service-apt/category.md
+      - Subcategories: service-apt/subcategories.md
+      - Category Hierarchy: service-apt/category-hierarchy.md
+      - Model Family List: service-apt/model-family-list.md
+      - Model Family Images: service-apt/model-family-images.md
+      - Branch Summary Slots: service-apt/branch-summary-slots.md
+      - Slot Details: service-apt/slot-details.md
+      - Branch Slot List: service-apt/branch-slot-list.md
+      - Customer / Prospect: service-apt/customer-or-prospect.md
+      - Customer Vehicle: service-apt/vehicles-by-customer.md
+      - Block Slot: service-apt/block-slot.md
+      - Overlap Validation: service-apt/overlap-validation.md
+      - Reschedule: service-apt/reschedule.md
+      - Cancel: service-apt/cancel.md
+      - Close: service-apt/close.md
