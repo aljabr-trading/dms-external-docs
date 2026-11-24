@@ -30,17 +30,13 @@ id: integer                             // Mandatory (service request id)
   "aptMasterId": 500,
   "aptSlotId": 1201,
   "requestDate": "2026-06-22T00:00:00",
-  "statusId": 4,                        // 4 = Cancel, 2 = No Show
-  "advisorId": 3001,
-  "startDate": "2026-06-22T09:00:00",
-  "endDate": "2026-06-22T10:00:00",
-  "srDetailRequestId": 70001,
+  "statusId": 4,                        // Mandatory (4 = Cancel, 2 = No Show)
+  "srDetailRequestId": 70001,           // Mandatory (claim from bookings)
   "remarks": "Customer requested cancellation",
-  "cancelReasonId": 1,
+  "cancelReasonId": 1,                  // Mandatory (Default: 1)
   "lang": "en",                         // Optional "en" | "ar"
   "sendCommunicationConfirmation": true,
-  "communicationType": 1,               // 1 = SMS, 3 = WhatsApp
-  "isFromPortal": false
+  "communicationType": 1,               // 1 = SMS
 }
 ```
 

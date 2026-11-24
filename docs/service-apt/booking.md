@@ -39,8 +39,8 @@ Refer the comment <span class="flag-required"> //Mandatory</span> means the prop
     "customerName": "Ahmed Ali",              // Optional (used when firstName/lastName are not both provided)
     "phoneCode": "966",                       // Optional (e.g. "966" or "+966")
     "phoneNumber": "555123456",               // Optional
-    "emailAddress": "ahmed.ali@example.com",  //Optional
-    "customerTypeId": 1,                      // 1 = Individual, 2 = Company
+    "emailAddress": "ahmed.ali@example.com",  // Optional
+    "customerTypeId": 1,                      // 1 = Individual, 2 = Company (default = 1)
     "companyName": "",                        // Optional (Required if customerTypeId 2)
     "contactName": "Ahmed Ali"                // Optional (Required if customerTypeId 2)
   },

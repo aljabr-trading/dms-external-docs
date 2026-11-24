@@ -20,7 +20,7 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 companyId: integer                      // Mandatory
 brandId: integer                        // Mandatory
-ouId: integer                           // Optional (must match brand when supplied)
+ouId: integer                           // Optional (resolved server-side when omitted)
 businessAreaId: integer                 // Mandatory
 branchId: integer                       // Optional
 isOpen: boolean                         // Optional (true: Created, NoShow, Pending)
@@ -28,8 +28,8 @@ isFutureOnly: boolean                   // Optional (true: request date in the f
 contactNo: string                       // At least one of contactNo, requestNo, or customerIdentificationNo is required
 requestNo: string                       // At least one of contactNo, requestNo, or customerIdentificationNo is required
 customerIdentificationNo: string        // At least one of contactNo, requestNo, or customerIdentificationNo is required
-pageNumber: integer                     // Optional
-pageSize: integer                       // Optional
+pageNumber: integer                     // Optional (Default = 1)
+pageSize: integer                       // Optional (Default = 10)
 lang: string                            // Optional "en" | "ar"
 ```
 

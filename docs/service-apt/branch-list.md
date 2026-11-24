@@ -21,8 +21,8 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 companyId: integer                            // Mandatory
 brandId: integer                              // Mandatory
-ouId: integer                                 // Optional
-businessAreaId: integer                       // Optional
+ouId: integer                                 // Optional (resolved server-side when omitted)
+businessAreaId: integer                       // Mandatory (Default = 3)
 regionId: integer                             // Optional
 cityId: integer                               // Optional
 branchId: integer                             // Optional

@@ -20,13 +20,13 @@ TEST: https://dms-gs-test.jtc.aljabr.com.sa/gs
 ```
 startDate: date-time                    // Mandatory (must be after today; within next 7 days)
 endDate: date-time                      // Mandatory (cannot exceed startDate + 7 days; within next 7 days)
-companyId: integer                      // Optional
-brandId: integer                        // Optional
-departmentId: integer                   // Optional
+companyId: integer                      // Mandatory
+brandId: integer                        // Mandatory
+departmentId: integer                   // Mandatory (Default: 3)
 categoryId: array[integer]              // Optional (repeat query key per value)
 subCategoryId: array[integer]           // Optional (repeat query key per value)
 branchId: array[integer]                // Optional (repeat query key per value)
-lang: string                            // Optional (default: en) "en" | "ar"
+lang: string                            // Optional (Default: en) "en" | "ar"
 ```
 
 !!! note

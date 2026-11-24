@@ -28,18 +28,18 @@ lang: string                            // Optional (default: en) "en" | "ar"
   {
     "isBlock": true,                            // true = block, false = unblock
     "companyHierarchyId": 101,                  // Optional (resolved server-side when omitted)
-    "companyId": 1,                             // Optional
-    "ouId": 1,                                  // Optional
-    "brandId": 1,                               // Optional
-    "branchId": 101,                            // Optional
-    "businessAreaId": 3,                        // Optional
-    "regionId": 1,                              // Optional
-    "categoryId": 10,                           // Optional
-    "subCategoryId": 20,                        // Optional
-    "reqDate": "2026-06-22T00:00:00",           // Date of the slot
-    "aptMasterId": 500,                         // Appointment master id
-    "aptSlotId": 1201,                          // Appointment slot id
-    "advisorId": 3001,                          // Optional
+    "companyId": 1,                             // Mandatory
+    "ouId": 1,                                  // Optional (resolved server-side when omitted)
+    "brandId": 1,                               // Mandatory
+    "branchId": 101,                            // Mandatory
+    "businessAreaId": 3,                        // Mandatory
+    "regionId": 1,                              // Mandatory
+    "categoryId": 10,                           // Mandatory
+    "subCategoryId": 20,                        // Mandatory
+    "reqDate": "2026-06-22T00:00:00",           // Mandatory (Date of the slot)
+    "aptMasterId": 500,                         // Mandatory (Appointment master id)
+    "aptSlotId": 1201,                          // Mandatory (Appointment slot id)
+    "advisorId": 3001,                          // Optional (resolved server-side when omitted)
     "remarks": "Blocked for maintenance"        // Optional
   }
 ]
